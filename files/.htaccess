@@ -1,0 +1,7 @@
+<Files ~ "^.*">
+  Deny from all
+</Files>
+
+<Files ~ "^.*\.png|.*\.jpg|.*\.gif|.*\.pdf|.*\.PDF|.*\.JPG|.*\.PNG|.*\.GIF|.*\.jpeg|.*\.JPEG">
+  Allow from all
+</Files>

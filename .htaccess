@@ -1,0 +1,13 @@
+Options -Indexes
+
+# force non-www domain
+RewriteCond %{HTTP_HOST} ^www\.tripplanner\.ge$ [NC]
+RewriteRule (.*) https://tripplanner.ge/$1 [R=301,L]
+
+IndexIgnore */*
+RewriteEngine On
+# images|styles|scripts|uploads|_manager|_website|_cache|
+RewriteRule ^(images|styles|scripts|uploads|flash|_manager|_website|img|_javascript|.*\.(pem|doc|docx|xls|xlsx|css|js|jpg|JPG|mp3|jpeg|JPEG|gif|GIF|swf|xml|png|PNG|pdf|ico|zip|rar|html|php|txt|sql)) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [QSA,L]

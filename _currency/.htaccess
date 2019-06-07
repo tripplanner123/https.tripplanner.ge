@@ -1,0 +1,13 @@
+<Files ~ "^.*">
+
+  Deny from all
+
+</Files>
+
+
+
+<Files ~ "^.*\.xml">
+
+  Allow from all
+
+</Files>

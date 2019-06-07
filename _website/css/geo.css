@@ -1,0 +1,551 @@
+
+@media (max-width:992px) {
+	.HeaderDiv { 
+		margin-bottom: 65px; 
+	}	
+	.HeaderButtons a {
+		font-family: bpg_nino_mtavruli_normal;
+		padding:3px 13px 0px 14px !important;
+		line-height: 21px;
+		height: 44px;
+	}
+	.HeaderButtons a:nth-child(2) {
+		line-height:40px;
+	}
+
+	.MenuList li a{
+		font-family: bpg_nino_mtavruli_normal;
+	}
+
+}
+
+.geolowercase{
+	text-transform: lowercase !important;
+}
+
+.HeaderButtons a {
+	font-family:bpg_nino_mtavruli_normal;
+	padding:9px 17px 7px 17px;
+}
+.MapInfoBottomDiv .Item label {
+	font-family:bpg_nino_mtavruli_normal;
+}
+h3.PageTitle {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.GreenCircleButton  {
+	font-family:'bpg_nino_mtavruli_normal' !important;
+}
+
+.ForgetPassLink {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.GreenLink_1 span {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.HeaderLoginForm .HeaderUserPanel .UserText {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.HomeFullInfoDiv .LeftDiv,
+.HomeFullInfoDiv_2 .LeftDiv {
+	font-family:DejaVuSans;
+}
+.ToursList .Item .BottomInfo .Title {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.ToursList .Item .BottomInfo .Day {
+	font-family:bpg_nino_mtavruli_normal;
+}
+
+.GreenCircleButton_2 {
+	font-family:bpg_nino_mtavruli_normal;
+	padding:12px 35px 8px 35px;
+}
+
+.GreenCircleButton_3 {
+	font-family:bpg_nino_mtavruli_normal;
+	padding:12px 35px 8px 35px;
+}
+
+.ToursList .Item .Buttons a{
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.BookNowRightDiv .BookNowButton {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.LogRegTitle {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.TermsAndConditions .Text a {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.RegistrationButton {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.MaterialForm .ErrorText {
+	font-family:DejaVuSans
+}
+
+.MaterialForm label {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.GreenCircleButton_4 {
+	font-family:bpg_nino_mtavruli_normal;
+	padding:12px 45px 8px 45px;
+}
+
+.MaterialForm input, 
+.MaterialForm textarea {
+	font-family:DejaVuSans;
+}
+
+.BookNowRightDiv .Title {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+
+.MapInfoModal .InfoHeader .Title {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.MapInfoModal .MapCategoryDiv .Item .Title {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.CatInfoButtons li a {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.amcharts-balloon-div * {
+	font-family:bpg_nino_mtavruli_normal !important
+}
+
+.InsidePagesHeader .Title span {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.Breadcrumb a {
+	font-family:DejaVuSans;
+}
+
+.SearchFilterItem span{
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.SearchFilterItem label.Name2 text {
+	font-family:DejaVuSans;	
+}
+
+.LocationDropDown .Item label {
+	font-family:bpg_nino_mtavruli_normal;
+	line-height: 26px;
+}
+
+.GreenSidebarDiv .SidebarTitle {
+	font-family:bpg_nino_mtavruli_normal
+}
+
+.PlannerCategories .Item .Title{
+	font-family:bpg_nino_mtavruli_normal;
+	font-size:11px;
+}
+
+.CheckBoxItem label {
+	font-family:bpg_nino_mtavruli_normal;
+	font-size:13px;
+	padding-top:5px;
+}
+
+.OneListDropDown .Item label {
+	font-family:bpg_nino_mtavruli_normal;
+}
+ 
+ 
+.TripTransfersDiv .LocationDropDown {
+	width:450px !important;
+} 
+ 
+ 
+.PackageInfoDiv label {
+	font-family: bpg_nino_mtavruli_normal;
+} 
+
+.TotalPriceDiv label {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.FiltersDiv .AllToursButton {
+	font-family: bpg_nino_mtavruli_normal;
+	padding-top:3px;
+}
+
+.FiltersDiv .AllToursButton div {
+	font-family:Tahoma
+}
+
+.CategoriesDropDown .Item .Info .Title {
+	font-family: bpg_nino_mtavruli_normal;		
+}
+
+.TripBottomDiv .TabsMenu li a {
+	font-family: bpg_nino_mtavruli_normal;		
+	padding:10px 40px 8px 40px;
+}
+
+.FiltItemsDiv .Item {
+	font-family: bpg_nino_mtavruli_normal;
+	padding: 8px 10px 4px 10px;
+}
+
+.FiltItemsDiv .SearchResultText {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.TripSinglePage .TripTitle {
+    font-family: bpg_nino_mtavruli_normal;
+}
+
+.TotalPriceDiv .Title {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.FreeIncurance {
+	font-family: bpg_nino_mtavruli_normal;
+	padding-bottom: 8px;
+	padding-top:5px;
+}
+
+.MoreBlogList .Title {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+
+#TourDescription,
+#TourIncludes {
+	font-family:DejaVuSans;
+}
+.OwervievTextDiv {
+	font-family:DejaVuSans;
+}
+
+.OwervievTextDiv strong {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+
+
+.CartTable .Title {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+
+#MyProfileMenuSelect select, 
+#ProductInsideSelect select {
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.g-collapse .accordion .card .card-header h5 button{
+	font-family: bpg_nino_mtavruli_normal;	
+}
+
+.g-collapse .accordion .card .collapse .card-body{
+	font-family: 'DejaVuSans';
+}
+
+.DropDownLogin .Title{
+	font-family: bpg_nino_mtavruli_normal;	
+}
+
+.ProfilePageDiv .ProfileSidebar .Title{
+	font-family: bpg_nino_mtavruli_normal;		
+}
+
+.ProfilePageDiv .ProfileSidebar li a{
+	font-family: bpg_nino_mtavruli_normal;	
+}
+
+.ProfilePageDiv .ProfileForm .ProfileImageEdit .UploadButton{
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.BlogInsidePage .BlogTitle{
+	font-family: bpg_nino_mtavruli_normal;
+}
+
+.BlogInsidePage .Description{
+	font-family: 'DejaVuSans';
+}
+
+.MapInformationDiv .InformationList .Item .Title{
+	font-family: 'DejaVuSans';	
+}
+
+.TabsContent ul{
+	font-family: 'DejaVuSans';	
+}
+
+.TabsContent h2{
+	font-family: 'DejaVuSans';		
+}
+
+.SightsList .Item .Title{
+	font-family: 'bpg_nino_mtavruli_normal';	
+}
+
+.BlogList .Item .TopInfo .Date{
+	font-family: 'DejaVuSans';	
+}
+
+.BlogList .Item .BottomInfo .Title{
+	font-family: 'DejaVuSans';		
+}
+
+.BlogList .Item .Buttons a{
+	font-family: 'DejaVuSans';
+}
+.FooterMenu .Title{
+	font-family: 'bpg_nino_mtavruli_normal';	
+}
+
+.FooterMenu li a{
+	font-family: 'DejaVuSans';
+}
+
+.BlogPageSlider .Item .Info .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.BlogPageSlider .Item .Info .Text{
+	font-family: 'DejaVuSans';
+}
+/*
+.CategoriesDropDown {
+	width:450px;
+}
+.CategoriesDropDown .Item .Info {
+	width:95%;
+}
+*/
+
+.BlogTags li a{
+	font-family: 'DejaVuSans';
+}
+
+.SearchInputs input{
+	font-family: 'DejaVuSans';	
+}
+
+.error{
+	font-family: 'DejaVuSans' !important;		
+}
+
+.ContactPage .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.ContactSidebar .Info li{
+	font-family: 'DejaVuSans';	
+}
+
+.ModalSearchItems li{
+	font-family: 'DejaVuSans';	
+}
+
+.SearchResultText{
+	font-family: 'DejaVuSans';		
+}
+
+.FooterSmallText{
+	font-family: 'DejaVuSans';			
+}
+
+.g-tooltip[data-tooltip]:before{
+	font-family: 'DejaVuSans';	
+}
+
+.SidebarDaysList .Item li label{
+	font-family: 'DejaVuSans';		
+}
+
+.ShowWindow1 .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.ShowWindow1 .Text{
+	font-family: 'DejaVuSans';	
+}
+
+#SuccessModal .Title{
+	font-family: 'bpg_nino_mtavruli_normal';	
+}
+
+#SuccessModal .Text{
+	font-family: 'DejaVuSans';		
+}
+
+.CartPageItems .ItemTop .Title22{
+	font-family: 'bpg_nino_mtavruli_normal';		
+}
+
+.CartPageItems .Item .Title{
+	font-family: 'DejaVuSans';	
+}
+
+.DeleteButton{
+	font-family: 'DejaVuSans';		
+}
+
+.aditional-services-box span{
+	font-family: 'DejaVuSans';	
+}
+
+.g-insuarance-error p{
+	font-family: 'DejaVuSans';	
+}
+
+.SidebarDaysList .Item.active .Day{
+	font-family: 'DejaVuSans';		
+}
+
+.SidebarDaysList .Item .Day{
+	font-family: 'DejaVuSans';		
+}
+
+.HtmlMultiSelect .TItle{
+	font-family: 'DejaVuSans';			
+}
+
+.PlannerBottom .PlanItem .Title{
+	font-family: 'DejaVuSans';	
+	font-size: 14px;
+}
+
+.HotelsDropDown .Title2, .CuisineDropDown .Title2, .TransporDropDown .Title2{
+	font-family: 'bpg_nino_mtavruli_normal';	
+}
+
+.HotelsDropDown .TextDiv, .CuisineDropDown .TextDiv, .LanguageDropDown .Title2, .TransporDropDown .TextDiv{
+	font-family: 'DejaVuSans';
+}
+
+.CheckboxListsForMobile .Item .Info .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.CheckboxListsForMobile .Item .Info .Text{
+	font-family: 'DejaVuSans';
+}
+
+.CheckboxListsForMobile .Item label a{
+	font-family: 'DejaVuSans';
+	color: #176b3e;
+	font-size: 11px;
+}
+
+.g-mob-item .Title{
+	font-family: 'DejaVuSans';
+}
+
+.DejaVuSans{
+	font-family: 'DejaVuSans' !important;	
+}
+
+.cuisune-mobile-box label span{
+	font-family: 'DejaVuSans';
+}
+
+.ProfileToursDiv .Item .Title{
+	font-family: 'DejaVuSans';
+}
+
+.PaymentMethod .Item .Name{
+	font-family: 'DejaVuSans';	
+}
+
+.HtmlMultiSelect select{
+	font-family: 'DejaVuSans';		
+}
+
+.HtmlMultiSelect .Title{
+	font-family: 'DejaVuSans';			
+}
+
+.FooterContactInfo{
+	font-family: 'DejaVuSans';				
+}
+
+.g-selector-mainbox{
+	font-family: 'DejaVuSans';					
+}
+
+.pickupButton{
+	font-family: 'DejaVuSans';
+}
+
+.additionalInformationgg h5{
+	font-family: 'DejaVuSans';
+}
+
+.additionalInformationgg p{
+	font-family: 'DejaVuSans';
+}
+
+.guideLanguage-box .guideLanguage{
+	font-family: 'DejaVuSans';
+}
+
+#ErrorModal .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+#g-pickplace-modal .Title{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+#g-pickplace-modal .form-control{
+	font-family: 'DejaVuSans';
+}
+
+#g-pickplace-modal .savePickUp{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.resultPickupsave{
+	font-family: 'DejaVuSans';
+}
+
+#ErrorModal .Text{
+	font-family: 'DejaVuSans';
+}
+
+.TabsContent p{
+	font-family: 'DejaVuSans';	
+}
+
+.Item_2 li label{
+	font-family: 'DejaVuSans';		
+}
+
+.datepicker-switch, .dow{
+	font-family: 'DejaVuSans';			
+}
+
+
+h3.PageTitle label{
+	font-family: 'bpg_nino_mtavruli_normal';
+}
+
+.scrolltext{
+	font-size: 10px;
+}

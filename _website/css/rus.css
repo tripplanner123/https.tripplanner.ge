@@ -1,0 +1,24 @@
+
+@media (max-width:992px) {
+	.HeaderDiv { 
+		margin-bottom: 65px; 
+	}	
+	.HeaderButtons a {
+ 
+		padding:3px 13px 0px 14px !important;
+		line-height: 18px;
+		height: 44px;
+	}
+	.HeaderButtons a:nth-child(2) {
+		line-height:35px;
+	}
+}
+
+
+/*.PlannerCategories .Item .Title{ 
+	font-size:9px;
+}*/
+
+h3.PageTitle label{
+	font-size: 35px;
+}

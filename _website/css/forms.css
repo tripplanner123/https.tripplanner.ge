@@ -1,0 +1,874 @@
+
+
+
+/* BUTTONS */
+.GreenCircleButton {
+    background:#12693b;
+    border-radius:25px;
+    text-transform:uppercase;
+    display:inline-block;
+    width:100%;
+    color:#fff;
+    border:none;
+    padding:10px;
+    font-size:15px;
+}
+.GreenCircleButton:hover {
+  opacity:0.7;
+}
+
+
+.GreenCircleButton_2 { 
+    border:solid #27774d 1px !important;
+    color:#27774d !important;
+    border-radius:25px; 
+    display:inline-block;
+    color:#fff;
+    border:none;
+    padding:10px 35px;
+    font-size:15px;
+    transition:0.5s;
+    margin-top:10px;
+}
+.GreenCircleButton_2:hover,
+.GreenCircleButton_2:focus {
+    color:#fff !important;
+    background:#27774d;
+    text-decoration:none; 
+}
+
+
+
+.GreenCircleButton_3 { 
+    border:solid #27774d 1px !important;
+    color:#27774d !important;
+    border-radius:25px; 
+    display:inline-block;
+    color:#fff;
+    border:none;
+    padding:10px 35px;
+    font-size:15px;
+    transition:0.5s; 
+    float:right;
+    margin-top:15px;
+}
+.GreenCircleButton_3:hover,
+.GreenCircleButton_3:focus {
+    color:#fff !important;
+    background:#27774d;
+    text-decoration:none; 
+}
+
+
+
+.GreenCircleButton_4 { 
+    border:solid #27774d 1px !important;
+    background:#27774d;
+    color:#fff !important;
+    border-radius:25px; 
+    display:inline-block;
+    color:#fff;
+    border:none;
+    padding:10px 45px;
+    font-size:16px;
+    transition:0.5s;
+    margin-top:10px;
+    float:right;
+    margin-top:15px;
+    cursor:pointer;
+}
+.GreenCircleButton_4:hover,
+.GreenCircleButton_4:focus {
+    opacity:0.6; 
+    text-decoration: none;
+}
+
+
+
+.DeleteButton {
+    border:solid #27774d 1px !important;
+    background:#fff;
+    color:#27774d;
+    border-radius:25px; 
+    display:inline-block; 
+    border:none;
+    padding:8px 20px;
+    font-size:15px;
+    transition:0.5s;
+    margin-top:10px; 
+    margin-top:15px; 
+}
+.DeleteButton i {
+  font-size:18px;
+  margin-right:10px;
+  font-weight:normal;
+}
+
+.pickupButton {
+    border:solid #27774d 1px !important;
+    background:#fff;
+    color:#27774d;
+    border-radius:25px; 
+    display:inline-block; 
+    border:none;
+    padding:8px 20px;
+    font-size:15px;
+    transition:0.5s;
+    margin-top:10px; 
+    margin-top:15px; 
+}
+.pickupButton i {
+  font-size:18px;
+  margin-right:10px;
+  font-weight:normal;
+}
+
+.Itemssss .Item:hover .pickupButton {
+    background: #27774d;
+    color: #fff;
+}
+
+.savePickUp {
+    border:solid #27774d 1px !important;
+    background:#fff;
+    color:#27774d;
+    border-radius:25px; 
+    display:inline-block; 
+    border:none;
+    padding:8px 20px;
+    font-size:15px;
+    transition:0.5s;
+    margin-top:10px; 
+    margin-top:15px; 
+}
+
+.savePickUp:hover {
+    background: #27774d;
+    color: #fff;
+}
+
+.RegistrationButton {
+    border:solid #27774d 1px !important;
+    background:none;
+    color:#27774d;
+    border-radius:25px; 
+    display:inline-block; 
+    border:none;
+    padding:8px 20px;
+    font-size:15px;
+    transition:0.5s;
+    margin-top:25px;   
+    margin-bottom:20px;
+}
+.RegistrationButton:hover {
+    background:#27774d;
+    color:#fff;
+}
+
+.WhiteButton {
+    border:solid #27774d 1px !important;
+    background:none;
+    color:#27774d;
+    border-radius:25px; 
+    display:inline-block; 
+    border:none;
+    padding:8px 20px;
+    font-size:15px;
+    transition:0.5s; 
+    cursor:pointer;
+}
+.WhiteButton:hover {
+    background:#27774d;
+    color:#fff;
+}
+
+.GreenLink_1 { 
+  color:#12693b;
+  text-align:center;
+  display:inline-block;
+  width:auto;  
+  margin-top:13px;
+}
+.GreenLink_1:hover,
+.GreenLink_1:focus {
+  text-decoration: none;
+}
+.GreenLink_1 span {
+  border-bottom:solid #12693b 1px;
+}
+ 
+
+.form-group {
+  position:relative;
+  margin-bottom:45px;
+}
+.padding_0 {
+  padding:0;
+}
+.margin_0 {
+  margin:0 !important;
+}
+.PaddingRight0 {
+  padding-right:0 !important
+}
+
+/* MATERIAL FORM */
+.MaterialForm 			  { 
+  position:relative;  
+}
+.MaterialForm i {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+.MaterialForm input,
+.MaterialForm textarea{
+  font-size:14px;
+  padding:15px 10px 11px 0px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #12693b;
+  background:none;
+  color:#b7b7b7;
+}
+.MaterialFormtextarea 				{
+  font-size:15px;
+  padding:0px 8px 0px 4px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #12693b;
+} 
+.MaterialForm label 				 {
+  color:#12693b; 
+  font-size:14px; 
+  position:absolute;
+  pointer-events:none;
+  left:0px;
+  top:15px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  font-weight:normal;
+  top:-10px;
+}
+ 
+ /*
+.MaterialForm input:focus ~ label, .MaterialForm input:valid ~ label,
+.MaterialForm textarea:focus ~ label, .MaterialForm textarea:valid ~ label 		{
+  top:-10px;
+  font-size:12px;
+  color:#27774d;
+}
+*/
+ 
+.MaterialForm .bar { position:relative; display:block; width:100%; }
+.MaterialForm .bar:before, .bar:after 	{
+  content:'';
+  height:1px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#12693b; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.MaterialForm .bar:before {
+  left:50%;
+}
+.MaterialForm.InputError input {
+  border-bottom:solid #ed1c24 1px;
+}
+.MaterialForm .ErrorText {
+  width:100%;
+  text-align:center;
+  color:#ed1c24;
+  padding-top:4px;
+  font-size:12px;
+}
+.MaterialForm .ErrorText2 {
+  width:100%; 
+  color:#ed1c24;
+  padding-top:45px;
+  font-size:12px;
+}
+
+.bar:after {
+  right:50%; 
+}
+
+ 
+.MaterialForm input:focus ~ .bar:before, .MaterialForm input:focus ~ .bar:after,
+.MaterialForm textarea:focus ~ .bar:before, .MaterialForm textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+.DisplayInline {
+  display:inline-block;
+  float:left;
+}
+ 
+ /*
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+ 
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+ /****************************** CHECKBOX & RADIO ********************************/
+ @keyframes hover-color {
+  from {
+    border-color: #c0c0c0; }
+  to {
+    border-color: #3e97eb; } }
+
+.TripRadio,
+.TripCheckbox, 
+.TripCheckbox2 {
+  position: absolute;
+  display: none; }
+
+.TripRadio[disabled],
+.TripCheckbox[disabled],
+.TripCheckbox2[disabled],{
+  cursor: not-allowed; }
+
+.TripRadio + label,
+.TripCheckbox + label, 
+.TripCheckbox2 + label{
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle; }
+  .TripRadio + label:hover:before,
+  .TripCheckbox + label:hover:before, 
+  .TripCheckbox2 + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color; }
+  .TripRadio + label:before,
+  .TripCheckbox + label:before,
+  .TripCheckbox2 + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid #c0c0c0; }
+  .TripRadio + label:after,
+  .TripCheckbox + label:after,
+  .TripCheckbox2 + label:after {
+    position: absolute;
+    display: none;
+    content: ''; }
+
+.TripRadio[disabled] + label,
+.TripCheckbox[disabled] + label,
+.TripCheckbox2[disabled] + label {
+  cursor: not-allowed;
+  color: #e4e4e4; }
+  .TripRadio[disabled] + label:hover, .TripRadio[disabled] + label:before, .TripRadio[disabled] + label:after,
+  .TripCheckbox[disabled] + label:hover,
+  .TripCheckbox[disabled] + label:before,
+  .TripCheckbox[disabled] + label:after,
+  .TripCheckbox2[disabled] + label:hover,
+  .TripCheckbox2[disabled] + label:before,
+  .TripCheckbox2[disabled] + label:after  {
+    cursor: not-allowed; }
+  .TripRadio[disabled] + label:hover:before,
+  .TripCheckbox[disabled] + label:hover:before,
+  .TripCheckbox2[disabled] + label:hover:before {
+    border: 1px solid #e4e4e4;
+    animation-name: none; }
+  .TripRadio[disabled] + label:before,
+  .TripCheckbox[disabled] + label:before,
+  .TripCheckbox2[disabled] + label:before {
+    border-color: #e4e4e4; }
+
+.TripRadio:checked + label:before,
+.TripCheckbox:checked + label:before,
+.TripCheckbox2:checked + label:before {
+  animation-name: none; }
+
+.TripRadio:checked + label:after,
+.TripCheckbox:checked + label:after,
+.TripCheckbox2:checked + label:after {
+  display: block; }
+
+.TripRadio + label:before {
+  border-radius: 50%; 
+  width:30px;
+  height:30px;
+  border:solid #cdcdcd 1px;
+}
+
+.TripRadio + label:after {
+    top: 7px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #b48d27;
+}
+
+.TripRadio:checked + label:before {
+  border: 1px solid #cdcdcd; }
+
+.TripRadio:checked[disabled] + label:before {
+  border: 1px solid #cdcdcd; }
+
+.TripRadio:checked[disabled] + label:after {
+  background: #c9e2f9; }
+
+
+
+
+.TripCheckbox + label:before, .TripCheckbox2 + label:before {
+  border-radius: 3px; }
+.TripCheckbox + label:after, .TripCheckbox2 + label:after {
+  top: 2px;
+  left: 7px;
+  box-sizing: border-box;
+  width: 6px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  border-top: 0;
+  border-left: 0; 
+}
+.TripCheckbox:checked + label:before, .TripCheckbox2:checked + label:before {
+  border: #3e97eb;
+  background: #00745d; 
+}
+.TripCheckbox:checked[disabled] + label:before, .TripCheckbox2:checked[disabled] + label:before {
+  border: #c9e2f9;
+  background: #c9e2f9; 
+}
+
+
+
+label.FontNormal {
+  font-weight:normal;
+}
+
+
+
+
+
+ 
+.slimScrollDiv { } 
+.slimScrollBar {
+  width:6px !important;
+}
+.slimScrollRail {
+  width:6px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRICE RANGE */
+
+#AmountLabelID {}
+#AmountLabelID  i {
+  font-family:BPGGEL !important;
+  font-style:normal; 
+  font-size:13px;
+}
+.PriceBox { 
+    width:100%;
+}
+
+.ui-widget-content { 
+  border:solid  #12693b 0.5px;
+  color: #222222;
+  margin-top: 21px;
+  height:2px;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute !important;
+  z-index: 2 !important;
+  width: 3.2em !important;
+  height: 2.2em !important;
+  cursor: default !important;
+  margin: 0 -20px auto !important;
+  text-align: center !important;  
+  line-height: 30px !important;
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+}
+
+.ui-corner-all {
+  /*border-radius: 20px;*/
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top:1px !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle:after {
+  content:'';
+  width:18px;
+  height:18px;
+  background:#b48d27;
+  border-radius:100%;
+  position:absolute;
+  top:-10px;
+  left:50%;
+  margin-left:-9px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  background:none !important;
+  border:none;
+  color:#575d5a !important;
+  padding-top:13px;
+  font-weight:normal;
+}
+.ui-widget-content .ui-state-default label {
+  font-weight:normal;
+  font-size:14px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  margin-left:-24px !important;
+}
+
+.ui-slider .ui-slider-handle {
+  cursor: pointer;
+}
+
+.ui-slider a,
+.ui-slider a:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.price, .lead p {
+  font-weight: 600;
+  font-size: 32px;
+  display: inline-block;
+  line-height: 60px;
+}
+
+h4.great {
+  background: #00ac98;
+  margin: 0 0 55px -60px;
+  padding: 7px 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  display: inline-block;
+  -moz-box-shadow:    2px 4px 5px 0 #ccc;
+    -webkit-box-shadow: 2px 4px 5px 0 #ccc;
+    box-shadow:         2px 4px 5px 0 #ccc;
+}
+
+.PriceSlider {
+  margin-top: 3px;
+  margin-bottom:15px;
+}
+
+.form-pricing {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.price-form {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+ 
+
+.help-text {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #737373;
+  position: absolute;
+  font-weight: 200;
+  text-align: right;
+  width: 188px;
+}
+
+.price-form label {
+  font-weight: 200;
+  font-size: 21px;
+}
+
+.ui-slider-range-min {
+  background: #2980b9;
+}
+/*
+.ui-slider-label-inner {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #393a40;
+    display: block;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+}
+*/
+
+
+
+
+
+/* RATING STARS */
+.RatingStars {
+  line-height:26px;
+  font-size:1.25em;
+}
+.RatingStars .fa {
+  color:#fff;
+}
+.RatingStars .active {color: #b48d27;}
+
+.BlueStars {
+    width: 20px;
+    position: absolute;
+    right: 7px;
+    top: 36px;
+}
+.BlueStars .fa {
+  color:#12693b;
+}
+.BlueStars .active {color: #b48d27;}
+
+
+
+
+
+
+
+
+
+
+.HtmlMultiSelect {
+	position:relative;
+	width:100%;
+	border-bottom:solid #b9b9b9 1px;
+	padding-bottom:10px;
+	margin-bottom:30px;
+	background: url(../img/arrow_2.png) no-repeat;
+    background-position: right 1px;
+	overflow:hidden;
+}
+.HtmlMultiSelect222 {
+	background:none;
+}
+.HtmlMultiSelect select {
+	border:none;
+	background:none;
+	padding:0;
+	width:130%;
+	margin:0;
+	position:relative;
+	/*left:-5px;*/
+	font-family:CenturyGothic;
+	color:#27774d;
+}
+.HtmlMultiSelect .Title {
+	font-family:CenturyGothic;
+	color:#27774d;
+}
+.MobileInputs .input-group {
+	width:100%;
+	display:inline-block;
+}
+.MobileInputs .TimeAddons{
+	width: 18% !important;
+    display: inline-block;
+    float: left;
+	padding:0;
+	left:0;
+	top:7px;
+}
+.DateControl1 {
+	width:32% !important;
+	display:inline-block;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	top:10px;
+	left:-3px;
+}
+.DateControl1 input {
+	width:150% !important;
+	font-size:12px
+}
+.DateControl2 {
+	width:32% !important;
+	display:inline-block;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	top:10px;
+	left:-3px;
+}
+.DateControl2 input {
+	width:150% !important;
+	font-size:12px
+}
+
+.DateControl3 {
+	width:calc(100% - 50px);
+	position:relative;
+	left:-3px;
+	top:10px;
+	display: inline-block;
+    float: left;
+}
+.DateControl3 input {
+	width:150% !important;
+}
+.FixedHeight {
+    background-position: right 28px;
+}	
+.FixedHeight select{
+	height:27px;
+	position:relative;
+	top:4px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TripNewCheckbox {
+    position:absolute;
+	display:none;
+}
+
+.TripNewCheckbox[disabled],
+{
+    cursor: not-allowed;
+}
+.TripNewCheckbox + label {
+    position: relative;
+    display: block;
+    padding-left: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.TripNewCheckbox + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color;
+}
+.TripNewCheckbox + label:before {
+       position: absolute;
+    top: 6px;
+    right: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border: 1px solid #c0c0c0;
+    border-radius: 100%;
+}
+.TripNewCheckbox + label:after {
+    position: absolute;
+    display: none;
+    content: '';
+} 
+.TripNewCheckbox[disabled] + label {
+    cursor: not-allowed;
+    color: #e4e4e4;
+} 
+.TripNewCheckbox[disabled] + label:hover,
+.TripNewCheckbox[disabled] + label:before,
+.TripNewCheckbox[disabled] + label:after {
+    cursor: not-allowed;
+}
+ 
+.TripNewCheckbox[disabled] + label:hover:before {
+    border: 1px solid #e4e4e4;
+    animation-name: none;
+}
+  
+.TripNewCheckbox:checked + label:before {   
+	background: #1d6037;
+    content: '\f00c';
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #fff;
+    font-size: 10px;
+    line-height: 13px;
+    padding-left: 2.5px;
+}
+
+.TripNewCheckbox:checked + label:after {
+    
+}
+
+
+
+
+
+
+
+

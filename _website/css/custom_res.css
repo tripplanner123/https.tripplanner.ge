@@ -1,0 +1,986 @@
+@media (max-width:992px) {
+	.TripSidebar .GreenSidebarDiv{
+		max-width: calc(100% - 5px);
+		width: calc(100% - 5px);
+		overflow: hidden;
+	}
+	#mobile-regions option{
+		padding: 0 5px;
+	}
+
+	.HtmlMultiSelect select{
+		padding: 0 0 0 2px;
+	}
+
+ 	.BookNowButton {
+		display:none;
+	}
+	.CartBuyDiv{
+		width: 100%;
+	}
+	.PaymentMethod .Item{
+		margin:0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.HeaderLogo {
+		margin: 0;
+		width: 50%;
+		padding: 0;
+		display: inline-block;
+	    background-size: 85%;
+   		background-position: top center;
+		position:relative;
+		z-index:999;
+	}
+	.HeaderDiv {
+		border:none;
+		background:#f9f9f9;
+		margin-bottom: 45px;
+		height:60px; 
+	}
+	.HeaderSearchIcon {
+		display:none;
+	}
+	.HeaderDiv .col-sm-5 {
+		display:inline-block;
+		width:100%;
+		padding:0;
+	} 
+
+	.HomeGeorgianMap {
+		display:none;
+	}
+
+	.ToursInsideSidebar .TotalPriceDiv{
+		margin-bottom: 20px;
+	}
+
+	.SumCount{
+		padding: 0 31px;
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	    font-weight: bolder;
+	}
+
+	.HeaderButtons a {
+		font-size: 10px !important;
+	}
+
+	.HeaderDiv .col-sm-2.text-center {
+		position: absolute;
+	    top: 0;
+	    left:0;
+	    width: 100%;
+	    height:60px;
+        padding-top: 15px;
+	}
+	.HeaderCardIcon {
+	    margin-right: 0;
+	    top: -12px;
+	    right: 10px;
+	}
+	.HeaderLoginForm {
+		left: 30px;
+		top: -3px;
+	}
+	.HeaderLoginForm .HeaderUserPanel .UserText {
+		display:none;
+	}
+	.HeaderDiv .col-sm-5.text-right {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height:60px;
+	}
+
+	.ButtonsColsm5 { 
+	    padding-left: 0;
+	    padding-right: 0;
+	    display: inline-block;
+	    width:calc(100% - -2px);
+	    position: absolute;
+	    top: 50px;
+	    left: -2px;
+	}
+	.HeaderSelect {
+		display:none;
+	}
+	.HeaderButtons {  
+       	/*display: inline-block;
+		width: calc(100% - 23px);
+		position: relative;
+		top: 0;
+		margin-left: 3px;*/
+		position: relative;
+	    top: 0;
+	    margin-left: 3px;
+	    background: #f9f9f9;
+	    padding: 10px 0;
+	    height: 50px;
+	}
+	.HeaderButtons a {
+		width:calc(33.33333333333333% - 8px);
+		display:table;
+		float:left;
+		background:#b9b9b9;
+		border:#b9b9b9;
+		border-radius:3px;
+		color:#fff;
+		line-height:30px;
+		margin-left:4px;
+		margin-right:4px;
+		font-size:12px;
+		padding:0;
+		text-align:center; 
+	} 
+	.HeaderButtons a.active,
+	.HeaderButtons a:hover	{
+		background:#176b3e;
+		border:#176b3e;
+	}
+
+	.HeaderButtons a span{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+
+	/*****************************/
+
+
+	h3.PageTitle {
+		height:26px;
+		margin-bottom:8px;
+	}
+	h3.PageTitle label {
+		display:none;
+	}
+	h3.PageTitle span {
+		left:0;
+		bottom:0;
+	}
+
+
+	.HomeFullInfoDiv,
+	.HomeFullInfoDiv_2 {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    margin-bottom:20px;
+	}
+	.HomeFullInfoDiv .RightDiv,
+	.HomeFullInfoDiv_2 .RightDiv {
+		float:none;
+		width:100%;
+		padding-left:0;
+	}
+	.HomeFullInfoDiv .RightDiv .Background,
+	.HomeFullInfoDiv_2 .RightDiv .Background {
+		left:0;
+		width:100%;
+		height:150px;
+	}
+	.HomeFullInfoDiv .LeftDiv,
+	.HomeFullInfoDiv_2 .LeftDiv {
+		width:100%;
+		min-height:auto;
+		padding-bottom:0;
+		height:auto
+	}
+	.HomeFullInfoDiv .LeftDiv .container,
+	.HomeFullInfoDiv_2 .LeftDiv .container {
+		width:100%;
+		padding:30px;
+	}
+	.HomeFullInfoDiv_2 {
+	 
+	}
+	.ToursListDiv {
+		margin-bottom:0
+	}
+	.ToursListDiv .GreenCircleButton_2 {
+		display:none;
+	}
+
+
+	.SightsList {
+	    padding-left: 10px;
+    	padding-right: 10px;
+	}
+	.SightsList .col-sm-6 {
+		width:50%;
+		float:left;
+		display:inline-block;		
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.SightsList .Item .Background {
+		height:120px;
+	}
+	.SightsList .Item {
+	    margin-bottom: 10px;
+	}
+	.SightsList .Item .Title {
+	    position: absolute;
+	    bottom: -1px;
+	    right: 6px;
+	    color: #fff;
+	    font-size: 21px;
+	    text-transform: uppercase;
+	}
+	.SightsListDiv .GreenCircleButton_2 {
+		display:none;
+	}
+
+	.SightsListDiv {
+		margin-bottom:0;
+	}
+	.BlogListDiv {
+		margin-bottom:0;
+	}
+	.PartnersListDiv {
+		margin-bottom:10px;
+	}
+	.PartnersList {
+		padding-top:0;
+	}
+	.PartnersList a {
+		padding:20px;
+		text-align:center;
+	}
+	.PartnersList img {
+		height:40px;
+	}
+
+	/********************** FOOTER DIV *************************/
+	.FooterDiv {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	.FooterMenu {
+		display:none;
+	}
+	.FooterLogo {
+		display:none;
+	}
+	.FooterSmallText {
+		display:none;
+	}
+	.CopyRight {
+		display:none
+	}
+	.NewsLetterForm {
+	    padding-top: 5px;
+	    display: inline-block;
+	    width: 55%;
+	    padding-left: 15px;
+	}
+	.NewsLetterForm {
+		padding-right: 0px;
+	}
+	.NewsLetterForm .GoButton {
+	    position: absolute;
+	    right: 10px;
+	    top: -40px;
+	}
+	.NewsLetterForm input {
+		width:100%;
+	}
+	.NewsLetterTitle {
+		display:block;
+	}
+
+
+	.BlogPageSlider .Item {
+		height:250px;
+	}
+	.BlogPageSlider .Item .Info {
+		top:35px;
+	}
+	.BlogPageSlider .Item .Info .Title {
+		 font-size:17px;
+		 top:0;
+	}
+	.BlogPageSlider .Item .Info .container {
+		width:100%;
+	}
+	.BlogPageSlider .Item .Info .Text {
+		padding:10px;
+		font-size:12px;
+	}
+	.BlogPageSlider .BlogHeaderButton {
+	    display: inline;
+	    padding: 8px 37px;
+	    position: relative;
+	    top: 30px;
+	    font-size: 13px;
+	}
+	.BlogPageSlider .slick-dots {
+		bottom:20px
+	}
+	.BlogPageSlider .slick-dots li button {
+		width:7px;
+		height:7px;
+	}
+	.BlogPageSlider .slick-dots li {
+		width: 7px !important;
+   		height: 7px !important;
+	}
+	.BlogPageSlider .slick-dots li.slick-active:after {
+		display:none;
+	}
+	.BlogTopInfo {
+		display:none;
+	}
+
+
+	.BlogPageSlider.SmallHeader .Item {
+		height:250px;
+	}
+	.BlogInsidePage .container {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.BlogInsidePage .BlogTitle {
+		font-size:20px;
+	}
+	.BlogTags {
+		display:none;
+	}
+	.FacebookComment {
+		display:none;
+	}
+	.MoreBlogList {
+		margin-top:15px;
+	}
+	.MoreBlogList .Title {
+		margin-bottom: 10px;
+	}
+
+	
+	
+	
+	
+	
+	.InsidePagesHeader {
+		display:none;
+	}
+	.Breadcrumb {
+		display:none;
+	}
+	
+	.ColSm9_2 {
+		width:100%;
+	}
+	.TripListPageDiv .ColSm9 {
+		width:100%;
+	}
+	.TripListPageDiv .col-sm-4 {
+		padding:0;
+	}
+	.TripListPageDiv22 .col-sm-4 {
+		padding-left:10px;
+		padding-right:0px;
+	}
+	.ToursPlannerDiv {
+		max-height:100%;
+		padding:0;
+		background:none;
+	}
+	.CheckboxLists {
+		display:none;
+	}
+	.ToursPlannerDiv .slimScrollDiv, .ToursPlannerDiv .DivScroll {
+		max-height:100%;
+	}
+	.ToursPlannerDiv {
+		min-width:none;
+	}
+	.ToursPlannerDiv .col-sm-3 {
+		width:25%;
+		float:left;
+		display:inline-block;
+		padding-left:5px;
+		padding-right:5px;
+	}
+	
+	.PlannerCategories .col-sm-3 {
+		width:50%;
+		float:left;
+		display:inline-block;
+		padding-left:5px;
+		padding-right:5px;
+	}
+
+	.g-tooltip[data-tooltip]:before{
+		font-size: 12px;
+	}
+	
+	.PlannerCategories .row {
+		margin-left:-5px;
+		margin-right:-5px;
+	}
+	.PlannerCategories .Item {
+		width:100%;
+		border-radius: 3px;
+		height:70px;
+		padding-top: 5px;
+	}
+	.PlannerCategories .Item .CheckedItem {
+		width:20px;
+		height:20px;
+		right:10px;
+		top:-10px;
+	}
+	.PlannerCategories .Item.active .MuseumIcon,
+	.PlannerCategories .Item .NaturalIcon,
+	.PlannerCategories .Item .CulturalIcon,
+	.PlannerCategories .Item .WineToursIcon {
+		transform:scale(0.6)
+	}
+	.PlannerCategories .Item .Title {
+    	font-size: 10px;
+   		color: #27774d;
+    	margin-top: 10px;
+	    line-height: 15px;
+	}
+	
+	.TripListPageDiv .FiltersDiv {
+		padding-bottom:0;
+		padding-top:0;
+	}
+	.ShowForMobile {
+		display:inline-block !important;
+	}
+	.HideForMobile {
+		display:none !important;
+	}
+	
+	.FiltersDiv .AllToursButton {
+		margin-bottom:30px;
+		width:100%;
+		height:40px;
+		line-height:40px;
+		margin-top:-15px;
+	}
+	.ResultsColDiv {
+		top:-10px;
+		margin-bottom:20px;
+		
+	}
+	
+	.FiltItemsDiv {
+		display:none;
+	}
+	
+	.LoginFormLeft {
+		padding:0;
+	}
+	.LogRegTitle {
+		/*display:none;*/
+	}
+	.FacebookLogin {
+		background:url('../img/fb_2.png') no-repeat;
+	    background-size: 100%;
+	}
+	.LoginFormLeft .FacebookLogin {
+		width:70%;
+	}
+	.RegLogPageDiv .LoginButton {
+		width:50%;
+		display:inline-block;
+		float:right;
+	}
+	.RegLogPageDiv .GreenCircleButton {
+		width:100%;
+		border-radius:3px;
+		display:block;
+		text-transform:none
+	}
+	.RegLogPageDiv .RegisterButton {
+		width:50%;
+		display:inline-block;
+		text-transform:none;
+	}
+	.RegisterBottomDiv {
+		padding-top:0;
+	}
+	.RegLogPageDiv .RegisterButton .GreenCircleButton {
+		background:#b9b9b9;
+	}
+	.LoginFormLeft .LoginButton .GreenCircleButton {		
+		top:0;
+	}
+	.DropDownLogin {
+		padding-left:15px;
+		padding-right:15px;
+		padding-bottom:30px;
+	}
+	.LoginFormLeft .ForgetPassLink {
+	    position: relative;
+	    top: -24px;
+	    width: 100%;
+	    float: right;
+	    text-align: right;
+	    font-size: 12px;
+	}
+	.RegLogInsidePage .container {
+		padding:0;
+	}
+	.RegistrationFormRight {
+
+	}
+	.RegistrationFormRight:after {
+		display:none;
+	}
+	.PaddingMobile0 {
+		padding:0;
+	}
+	.form-group {
+		margin-bottom:30px;
+	}
+	.ProfileForm {
+		padding:0;
+	}
+	
+	
+	
+	.ProfilePageDiv {
+		padding-left:0;
+		padding-right:0;
+	}
+	.ProfilePageDiv .container {
+		width:100%;
+		padding-left:15px;
+	}
+	.ProfilePageDiv .ProfileSidebar {
+		width:100%;
+		margin-top:20px;
+	}
+	.ProfilePageDiv .ProfileSidebar li a {
+		width:100%;
+	}
+	
+	.ProfilePageDiv .PageTitle {
+		display:none;
+	}
+	
+	.ProfilePageDiv .ProfileRightDiv {
+		width:100%;
+	}
+	.ProfileWishlist {
+		padding-top:30px;
+	}
+	
+	.ProfilePageDiv .ProfileForm {
+		width:100%;
+		padding:0;
+		margin-left:0;
+		padding-bottom:30px;
+		padding-top:30px;
+	}
+	
+	.PlannerBottom {
+		
+	}
+	.PlannerBottom .ColSm6 {
+		padding:0;
+		height:90px;
+	}
+	.PlannerBottom .PlanItem .SecondCheckDiv  {
+		padding-right:0;
+	}
+	
+	.SecondCheckDiv .HtmlMultiSelect{
+		margin-top:15px;
+	}
+	
+	.TripTransfersDiv {
+		padding-right:0;
+	}
+	.FiltersDiv .col-sm-4 {
+		display:inline-block;
+		width:100%;
+	}
+	.TripListInsidePage {
+		margin-top:15px;
+		display:inline-block;
+		width:100%;
+	}
+	
+	
+	.ColSm3 {
+		width:100%;
+		padding:0
+	}
+	.PackageInfoDiv {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.TotalPriceDiv {
+		padding-left:0px;
+		padding-right:15px;
+	}
+	.GreenSidebarDiv {
+		padding-bottom:0
+	}
+	
+	.TotalPriceDiv .col-sm-6 {
+		display:inline-block;
+		width:50%;
+		float:left;
+	}
+	.FreeIncurance {
+		display:inline-block;
+	}
+	
+	.PlannerCategories .col-sm-3 {
+		/*overflow:hidden;*/
+		padding-top:12px;
+	}
+	
+	.TripBottomDiv {
+		margin-top:3px;
+	}
+
+	/* Gio Added START */
+	.TripBottomDiv .TabsMenu li{
+		display: block;
+	}
+
+	.g-mobilePadding-15{
+		padding-right: 15px !important;
+    	padding-left: 15px;
+	}
+	.g-mobilehalf{
+		margin: 0;
+		padding: 0;
+		width: calc(50% - 15px);
+		display: inline-block;
+	}
+	.g-mobilehalf:first-child{
+		margin-left: 15px;
+	}
+
+	.cuisune-mobile-box{
+		margin:0 0 10px 0;
+		padding:0;
+		width: 100%;
+	}
+
+	.cuisune-mobile-box .CheckBox{
+		position: static !important;
+	}
+
+	.cuisune-mobile-box label{
+		margin:0 0 10px 0;
+		padding:0;
+		width: 100%;
+		position: relative;
+		/*height: 45px;*/
+	}
+	
+	.cuisune-mobile-box label span{
+		padding:0 10px 0 30px; 
+		display: block;
+	}
+
+	.cuisune-mobile-box label input[type='number']{
+		margin: 5px 0 0 30px;
+		padding: 0;
+		width: 50px;
+		height: 20px;
+		/*position: absolute;
+		left: 30px;
+		bottom: 0px;*/
+		border: solid 1px #666666;
+	}
+
+	.SidebarDaysList .Item{
+		width: 80%;
+		margin-left: 10%;
+	}
+	/* Gio Added END */
+
+	.TotalPriceDiv222 {
+		padding-bottom:25px !important;
+	}
+	.ToursSliderDiv .BigImageSlide {
+		
+	}
+	
+	.ToursSliderDiv {
+		height:200px;
+		border-radius:3px;
+		margin-top:0;
+	}
+	.ToursSliderDiv .BigImageSlide {
+		height:180px;
+	}
+	.ToursSliderDiv .SmallImageSlide {
+ 
+		padding-left:calc(50% - 110px);
+		padding-right:calc(50% - 110px);
+	}
+	.ToursSliderDiv .SmallImageSlide .Image {
+		height:60px;
+	}
+	.TripSinglePage .TripTitle {
+		font-size:15px;
+		padding-top:10px;
+	}
+
+	.MenuSelect select{
+		color: #555555;
+	}
+	
+	
+	
+	
+	
+	.CartPageItems {
+		margin-top:10px;
+	}
+	.CartPageItems .Itemssss {
+		border:none;
+	}
+	
+	.CartPageItems .Item {
+		width: 100%;
+		padding:10px 0;
+		border-radius: 3px;
+		box-shadow: 0 0 15px rgba(0,0,0,0.1);
+		position:relative;
+		
+	}
+	.CartPageItems .Item .col-sm-5 {
+		position: absolute;
+		top: 0;
+	}
+	
+	
+	.CartPageItems .Item .col-sm-2 {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.CartPageItems .Item {
+		margin-bottom:14px;
+	}
+	
+	
+	.CartPageItems .Item .Image {
+		width: 80px;
+		height: 63px;
+	}
+	.deleteCartItem {
+		/*background:#b58b1e;
+		border:solid #b58b1e 1px !important;
+		color:#fff;*/
+	}
+	.deleteCartItem span {
+		display:none;
+	}
+	
+	.deleteCartItem i {
+		margin-right:0
+	}
+	.deleteCartItem {
+		/*padding: 4px 7px;
+		border-radius: 5px;*/
+	}
+	.CartPageItems .col-sm-2.text-center {		
+		position: absolute; 
+		right: -1px;
+		top: -7px;
+	}
+	
+	.CartPageItems .Item .Price span {
+		font-size:15px;
+	}
+	.ItemTop {
+		display:none !important;
+		
+	}
+	.CartPageItems .col-sm-3.text-center {
+		position:absolute;
+		right: -6px;
+		bottom: 10px;
+	}
+	
+	.CartPageItems .Item .Price { 
+		background: #d4d4d4;
+		padding: 0 6px;
+		border-radius: 3px;
+	}
+	
+	.CartPageItems .Item .Title {
+		font-size: 13px;
+		margin-left: 84px;
+		margin-top: 7px;
+		width: calc(100% - 100px);
+		text-align: left;
+	}
+	
+	.TotalPriceDiv {
+		width:100%;
+	}
+	
+	
+	.PlannerCategories {
+		padding:0px 0 20px 0;
+		background:none;
+	}
+	
+	
+	
+	.TotalPriceDiv222 {
+		padding-bottom:20px;
+	}
+	
+	#MyProfileMenuSelect, #ProductInsideSelect {
+		display:block
+	}
+
+
+	.addd{
+		/*width: 80%;*/
+		padding:0 10%;
+	}
+	.IncuranceNewDiv{
+		padding: 10px 10%;
+	}
+
+	.SumCount{
+		padding: 0;
+		margin: 0 5px;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 992px){
+	
+	.ToursPlannerDiv { 
+		min-height:440px;
+	}
+	
+	.ShowForMobile {
+		display:none;
+	} 
+	.container {
+		width:1250px;
+	}
+	
+	.MenuHamburger {
+		display:none;
+	}
+
+	.FooterContactInfo {display:none;}	
+	.FooterSocialResponsive {display:none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@media only screen and (max-width: 800px) {
+    
+	#ResponsiveTable table, 
+	#ResponsiveTable thead, 
+	#ResponsiveTable tbody, 
+	#ResponsiveTable th, 
+	#ResponsiveTable td, 
+	#ResponsiveTable tr { 
+		display: block; 
+	}
+ 
+	#ResponsiveTable thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#ResponsiveTable tr { border: 1px solid #ccc; }
+ 
+	#ResponsiveTable td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#ResponsiveTable td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	#ResponsiveTable td:before { content: attr(data-title); }
+}
+
+
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 1366px) {
+     
+}
+
+@media (min-width: 1440px) {
+	 
+}
+    
+
+@media (min-width: 1680px) {
+  
+}
+
+@media (min-width: 1920px) {
+     
+}
+
+@media (min-width: 2560px) {
+	
+}
+
+
+*/
+
+@media (max-width:480px) {
+	.SightsList .Item .Title{
+		bottom: 6px !important;
+		left: 6px !important;
+		font-size: 12px !important;
+	}
+}
