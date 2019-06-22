@@ -1,6 +1,6 @@
 <?php 
 error_reporting(0);
-ini_set('display_errors', FALSE);
+ini_set('display_errors', 0);
 
 if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
     $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -11,6 +11,8 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
 
 require_once '_plugins/vendor/autoload.php';
 use Intervention\Image\ImageManager;
+
+//WebP
 
 class Image
 {
@@ -50,9 +52,9 @@ class Image
 			if(!file_exists($resizePath)){		
 				$manager = new ImageManager(array('driver' => 'gd'));	//imagick	
 				if($grey){
-					$manager->make($filename[1])->fit($w, $h)->greyscale()->encode('jpg', 65)->save($resizePath)->colorize(0, 30, 0);
+					$manager->make($filename[1])->fit($w, $h)->greyscale()->encode('jpeg', 65)->save($resizePath)->colorize(0, 30, 0);
 				}else{
-					$manager->make($filename[1])->fit($w, $h)->encode('jpg', 65)->save($resizePath)->colorize(0, 30, 0);
+					$manager->make($filename[1])->fit($w, $h)->encode('jpeg', 65)->save($resizePath)->colorize(0, 30, 0);
 				}
 			}
 

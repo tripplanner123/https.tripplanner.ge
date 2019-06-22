@@ -6,7 +6,7 @@ ini_set('memory_limit', '5120M');
 define('PRODUCTION', FALSE);
 define('START_TIME', microtime(TRUE));
 define('START_MEMORY', memory_get_usage());
-define('WEBSITE_VERSION', '2.9.3');
+define('WEBSITE_VERSION', '2.9.5');
 date_default_timezone_set('Asia/Tbilisi');
 if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
     $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

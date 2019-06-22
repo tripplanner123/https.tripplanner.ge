@@ -63,7 +63,7 @@ src="https://www.facebook.com/tr?id=2094836854180057&ev=PageView
     <meta charset="utf-8">
     <?=$g_request->meta_tag()?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=360, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     
     <base href="<?php echo href(); ?>" />
 	<meta name="theme-color" content="#27774d" />
@@ -178,33 +178,6 @@ var ml_account = ml('accounts', '1240842', 'l3m8y1l7t3', 'load');
 </head>
 <body>
 <div id="preloader"></div>
-<?php 
-$g_gift = g_gift();
-if($g_gift["menutitle"]==1):
-?>
-<div class="modal fade TripModalStyle giftpopup" id="giftpopup" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content"> 
-            <div class="modal-body" style="background-color: transparent !important;">
-        		<div class="popupStyle" style="background-image: url('<?=$g_gift["image1"]?>');"></div>
-            </div> 
-        </div>
-    </div>
-</div>
-<div class="gift" onclick="$('#giftpopup').modal('show')"></div>
-<?php endif; ?>
-
-<div class="newScroller">
-	<span></span>
-	<!-- <span></span>
-	<span></span> -->
-</div>
-<script>
-	document.getElementsByClassName("newScroller")[0].addEventListener("click", () => {
-	var elmnt = document.getElementsByClassName("ToursListDiv")[0];
-	elmnt.scrollIntoView();
-});
-</script>
 
 <!-- Messages Popups -->
 <div class="modal fade MessagesPopup" id="ErrorModal" tabindex="-1" role="dialog" aria-hidden="true">

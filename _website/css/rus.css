@@ -22,3 +22,10 @@
 h3.PageTitle label{
 	font-size: 35px;
 }
+
+.gift2 .badgeText{
+    font-size: 10px;
+    top: 75px;
+    left: 50px;
+    transform: rotate(30deg);
+}

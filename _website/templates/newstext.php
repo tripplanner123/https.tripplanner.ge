@@ -35,12 +35,12 @@
 		</div>
 	</div>
 
-	<!-- <div class="MoreBlogList">
+	<div class="MoreBlogList">
 		<div class="container">
-			<div class="Title">You might also like...</div>
+			<div class="Title"><?=l("youmightalsolike")?></div>
 			<div class="BlogList">
 				<div class="row">
-					<div class="col-sm-3">
+					<!-- <div class="col-sm-3">
 						<div class="Item">
 							<div class="TopInfo">
 								<div class="Background" style="background:url('img/blog_1.png');"></div> 
@@ -54,55 +54,11 @@
 								<a href="blog_inside.html">More</a> 
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="Item">
-							<div class="TopInfo">
-								<div class="Background" style="background:url('img/blog_2.png');"></div> 
-								<div class="Date">12.10.2017</div>
-							</div>
-							<div class="BottomInfo">
-								<div class="Title">One Day Tour In Yazbegi</div>  							
-								<div class="Text">Tourist zones, where it is possible to do some extreme sports, make the idea</div>
-							</div>
-							<div class="Buttons">
-								<a href="blog_inside.html">More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="Item">
-							<div class="TopInfo">
-								<div class="Background" style="background:url('img/blog_3.png');"></div> 
-								<div class="Date">12.10.2017</div>
-							</div>
-							<div class="BottomInfo">
-								<div class="Title">One Day Tour In Yazbegi</div>  							
-								<div class="Text">Tourist zones, where it is possible to do some extreme sports, make the idea</div>
-							</div>
-							<div class="Buttons">
-								<a href="blog_inside.html">More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="Item">
-							<div class="TopInfo">
-								<div class="Background" style="background:url('img/blog_4.png');"></div> 
-								<div class="Date">12.10.2017</div>
-							</div>
-							<div class="BottomInfo">
-								<div class="Title">One Day Tour In Yazbegi</div>  							
-								<div class="Text">Tourist zones, where it is possible to do some extreme sports, make the idea</div>
-							</div>
-							<div class="Buttons">
-								<a href="blog_inside.html">More</a>
-							</div>
-						</div>
-					</div>
+					</div> -->
+					<?=news()?>
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 </div>

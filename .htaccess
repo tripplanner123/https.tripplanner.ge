@@ -1,5 +1,11 @@
 Options -Indexes
 
+# Set up caching on media files for 1 week
+<FilesMatch "\.(gif|jpg|jpeg|png|swf)$">
+ExpiresDefault A604800
+Header append Cache-Control "public"
+</FilesMatch>
+
 # force non-www domain
 RewriteCond %{HTTP_HOST} ^www\.tripplanner\.ge$ [NC]
 RewriteRule (.*) https://tripplanner.ge/$1 [R=301,L]
