@@ -996,8 +996,8 @@ foreach($Transport as $tra){
 	};
 </script>
 
-<!-- <script type="text/javascript" src="_website/js/planner.js?v=<?=WEBSITE_VERSION?>"></script> -->
-<script type="text/javascript" src="_website/js/plan.compressed.js?v=<?=WEBSITE_VERSION?>"></script>
+<script type="text/javascript" src="_website/js/planner.js?v=<?=WEBSITE_VERSION?>"></script>
+<!-- <script type="text/javascript" src="_website/js/plan.compressed.js?v=<?=WEBSITE_VERSION?>"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeSTjMJTVIuJaIiFgxLQgvCRl8HJqo0qo&amp;callback=initMap"></script>
 
 <script type="text/javascript">

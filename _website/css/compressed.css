@@ -197,10 +197,10 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 
 @media (max-width:992px){
 	.slick-track{
-		width:100% !important;
+		width:100%;
 	}
 	.slick-track .slick-slide{
-		width:100% !important;
+		width:100%;
 	}
 	.gift2{
 		transform: scale(0.6);
@@ -208,7 +208,7 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 	}
 
 	.newScroller{
-		display: none;
+		display: none !important;
 	}
 
 	.popupStyle{

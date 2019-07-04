@@ -657,7 +657,7 @@ $(document).on("click", ".catbox", function(){
     }else{
         $(this).addClass("active");
         $(".CheckedItem", this).show();
-        $("."+cattohide+" .CheckBoxItem").hide();
+        $("."+cattohide+" .CheckBoxItem").show();
 
         $(".LocationDropDown1 .TripCheckbox").each(function(){
             if($(this).is(':checked')){

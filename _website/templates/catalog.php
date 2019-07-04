@@ -35,18 +35,30 @@ $g_places_with_tour_count = g_places_with_tour_count();
 
       <div class="FiltersDiv">
         <div class="row row0">
-          <div class="AllToursButton"><?=l("alltours")?> <div><?=(isset($items[0]["counted"])) ? $items[0]["counted"] : 0?></div></div>
-		  
-		  
+          <a href="/<?=l()?>/ongoing-tours" class="AllToursButton" style="display:block; text-decoration: none;"><?=l("alltours")?> <div><?=(isset($items[0]["counted"])) ? $items[0]["counted"] : 0?></div></a>
 		<div class="col-sm-4 ShowForMobile">     
         <input type="hidden" name="mobile-categories" id="mobile-categories" value="" />
         <div class="g-selector-mainbox">
-          <div class="g-selector-title" data-defaulttext="<?=htmlentities(l("searchbycategories"))?>"><?=l("searchbycategories")?></div>
+          <div class="g-selector-title" data-defaulttext="<?=htmlentities(l("searchbycategories"))?>"><?php 
+          $cat = array();
+          if(isset($_GET["cat"]) && $_GET["cat"]!=""){
+            $cat = explode(",",$_GET["cat"]); 
+            $selectedCats = [];
+            foreach ($g_categories_with_tour_count as $item):
+              if(in_array($item["id"], $cat)){
+                $selectedCats[] = $item["title"];
+              }
+            endforeach;
+            echo implode(", ", $selectedCats);
+          }else{
+            echo l("searchbycategories");
+          }
+          ?></div>
           <div class="g-mselector-box">
             <?php 
             foreach ($g_categories_with_tour_count as $item):
             ?>
-            <label><?=$item["title"]?> <input type="checkbox" name="mselector[]" value="<?=$item["id"]?>" class="mselector" data-attached="#mobile-categories" data-val="<?=htmlentities($item["title"])?>" /></label>
+            <label><?=$item["title"]?> <input type="checkbox" name="mselector[]" value="<?=$item["id"]?>" class="mselector" data-attached="#mobile-categories" data-val="<?=htmlentities($item["title"])?>" <?=(in_array($item["id"], $cat)) ? 'checked="checked"' : ''?> /></label>
             <?php 
             endforeach;
             ?>
@@ -58,12 +70,25 @@ $g_places_with_tour_count = g_places_with_tour_count();
 
       <input type="hidden" name="mobile-regions" id="mobile-regions" value="" />
         <div class="g-selector-mainbox">
-          <div class="g-selector-title" data-defaulttext="<?=htmlentities(l("searchbyregions"))?>"><?=l("searchbyregions")?></div>
+          <div class="g-selector-title" data-defaulttext="<?=htmlentities(l("searchbyregions"))?>"><?php
+          $reg = array();
+          if(isset($_GET["reg"]) && $_GET["reg"]!=""){
+            $reg = explode(",",$_GET["reg"]); 
+            $selectedReg = [];
+            foreach ($g_places_with_tour_count as $item):
+              if(in_array($item["id"], $reg)){
+                $selectedReg[] = $item["title"];
+              }
+            endforeach;
+            echo implode(", ", $selectedReg);
+          }else{
+            echo l("searchbyregions");
+          }?></div>
           <div class="g-mselector-box">
             <?php 
             foreach ($g_places_with_tour_count as $item):
             ?>
-            <label><?=$item["title"]?> <input type="checkbox" name="mselector2[]" value="<?=$item["id"]?>" class="mselector2" data-attached="#mobile-regions" data-val="<?=htmlentities($item["title"])?>" /></label>
+            <label><?=$item["title"]?> <input type="checkbox" name="mselector2[]" value="<?=$item["id"]?>" class="mselector2" data-attached="#mobile-regions" data-val="<?=htmlentities($item["title"])?>" <?=(in_array($item["id"], $reg)) ? 'checked="checked"' : ''?> /></label>
             <?php 
             endforeach;
             ?>

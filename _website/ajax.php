@@ -88,7 +88,7 @@
                 db_query($sql5);
             }
 
-            $redirect = 'https://' . $_SERVER['HTTP_HOST'] . '/'.l().'/profile';
+            $redirect = 'https://' . $_SERVER['HTTP_HOST'] . '/'.l().'/profile#EditProFileLink';
             header('HTTP/1.1 301 Moved Permanently');
             header('Location: ' . $redirect);
             exit();
@@ -113,7 +113,7 @@
                 db_query($sql5);
             }
 
-            $redirect = 'https://' . $_SERVER['HTTP_HOST'] . '/'.l().'/profile';
+            $redirect = 'https://' . $_SERVER['HTTP_HOST'] . '/'.l().'/profile#EditProFileLink';
             header('HTTP/1.1 301 Moved Permanently');
             header('Location: ' . $redirect);
             exit();
@@ -1265,6 +1265,7 @@
                 }else{
                     $res = g_ajax_catalog_list_load();
                     $out_couned = (isset($res[0]["counted"])) ? $res[0]["counted"] : 0;
+                    $idList = [];
                     if($out_couned>0){
                         foreach ($res as $item): 
                             $link = href(63, array(), l(), $item['id']);
@@ -1321,12 +1322,12 @@
                             $Html .= "</div>";
                             $Html .= "</div>";
                             $Html .= "</div>";
-                        
+                            $idList[] = $item["id"];
                         endforeach;
                     }
                     $errorCode = 0;
                     $successCode = 1;
-                    $errorText = "";
+                    $errorText = implode(",", $idList);
                     $successText = l("welldone");
                 }
                 $out = array(
@@ -2269,7 +2270,7 @@
                     empty($_POST["input_lang"]) || 
                     empty($_POST["categoryList"]) || 
                     count(json_decode($_POST["categoryList"], true))<=0 || 
-                    empty($_POST["regionList"])
+                    !isset($_POST["regionList"])
                 ){
                     $errorCode = 1;
                     $successCode = 0;
@@ -2278,7 +2279,7 @@
                 }else{
                     $list = explode(",", $_POST["regionList"]);
                     $regionList = "";
-                    if(count($list)){
+                    if(!empty($_POST["regionList"]) && count($list) > 0){
                         $regionList .= "AND (";
                         foreach ($list as $v) {
                           $regionList .= "FIND_IN_SET({$v}, `catalogs`.`regions`) OR ";
@@ -2328,6 +2329,7 @@
                     `catalogs`.`startedplace`!=1 AND 
                     `catalogs`.`map_coordinates`!='' {$categoryList} {$regionList} 
                     ORDER BY `catalogs`.`position` ASC"; 
+                   
                     $fetch = db_fetch_all($sql);
 
                     foreach ($fetch as $item):

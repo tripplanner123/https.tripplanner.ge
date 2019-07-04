@@ -492,6 +492,7 @@ function updateDirections(google, directionsService, directionsDisplay)
 	var childrenunder = parseInt($(".planner-childrenunder").val());
 
 	var addSum = parseInt(hotelPrice + cuisune + guide);
+
 	var price_sum_converted = 0;
 
 	var waypts = [];
@@ -727,12 +728,16 @@ function updateDirections(google, directionsService, directionsDisplay)
         $("#plantripform #plannedDay").remove();
         $("#plantripform").append("<input type='hidden' id='plannedDay' value='"+parseInt(Day)+"' />");
 
+
 		//price_sum_converted = parseFloat(price_sum_converted + (addSum*parseInt(Day)));
 
         var totalGelPrice___ = parseFloat(price_sum_converted + (addSum*parseInt(Day)));
 
         var income_proc = parseFloat(nv_transport_object.income_proc);
+        console.log(totalGelPrice___ + " " +income_proc);
         totalGelPrice___ = totalGelPrice___ + (totalGelPrice___ * income_proc / 100);
+
+
 
         var curText___ = "<i>A</i>";
         var totalThePrice___ = totalGelPrice___.toFixed(0) + curText___;
@@ -744,6 +749,8 @@ function updateDirections(google, directionsService, directionsDisplay)
         }
 
         countAdditionalServices();
+
+
 
         $(".SumCount span.gelprice").html(totalThePrice___);
         $(".SumCount span.gelprice").attr("data-gelprice", totalGelPrice___);

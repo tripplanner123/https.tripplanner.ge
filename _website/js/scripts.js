@@ -91,7 +91,6 @@ function changeUrl(){
         }else{
             $(".ToursList .tourCatalogList").html(obj.Success.Html);
         }
-        $(".AllToursButton div").text(obj.Error.out_couned);
         $(".SearchResultText #g-main-serach-result").text(obj.Error.out_couned);
     });
 
@@ -109,6 +108,8 @@ function changeUrlMobile(){
     var regs = $("#mobile-regions").val();
     regs = (regs!="") ? regs.split(",") : []; 
 
+    var CSRF_token = $('meta[name=CSRF_token]').attr("value");
+
     $.ajax({
         type: "POST",
         url: Config.website+input_lang+"/?ajax=true",
@@ -118,7 +119,8 @@ function changeUrlMobile(){
             current_page:current_page,                  
             cat:cats.join(),                  
             reg:regs.join(),
-            pri:val           
+            pri:val,
+            token:CSRF_token           
         } 
     }).done(function( msg ) {
         var obj = $.parseJSON(msg);
@@ -127,7 +129,6 @@ function changeUrlMobile(){
         }else{
             $(".ToursList .row").html(obj.Success.Html);
         }
-        $(".AllToursButton div").text(obj.Error.out_couned);
         $(".SearchResultText span").text(obj.Error.out_couned);
     });
 
@@ -1207,8 +1208,8 @@ $(document).on('hidden.bs.modal', '#InsuarancePopupBox', function () {
 $(document).ready(function(){
     window.addEventListener("scroll", function (event) {
         var scroll = this.scrollY;
-        if(scroll>=200){
-            $(".HeaderDiv").css({"position":"fixed", "top":"0px", "z-index":"1600" });
+        if(scroll>=5){
+            $(".HeaderDiv").css({"position":"fixed", "top":"0px", "z-index":"1001" });
         }else{
             $(".HeaderDiv").css({"position":"static"});
         }
