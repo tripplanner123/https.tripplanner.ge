@@ -2277,6 +2277,7 @@
                     $errorText = l("allfields");                   
                     $successText = "";
                 }else{
+                    $selectedItems = json_decode($_POST["selectedItems"], true);
                     $list = explode(",", $_POST["regionList"]);
                     $regionList = "";
                     if(!empty($_POST["regionList"]) && count($list) > 0){
@@ -2333,14 +2334,17 @@
                     $fetch = db_fetch_all($sql);
 
                     foreach ($fetch as $item):
+                    $checked = (in_array($item["id"], $selectedItems)) ? ' checked="checked"' : '';
                     $html .= sprintf("<div class=\"Item\" data-region=\"%s\">", $item["regions"]);
                     $html .= sprintf(
-                        "<input class=\"TripCheckbox\" type=\"checkbox\" id=\"Chek%d\" data-map=\"%s\" data-categories=\"%s\" data-title=\"%s\" data-addprice=\"%s\" />",
+                        "<input class=\"TripCheckbox\" type=\"checkbox\" id=\"Chek%d\" data-map=\"%s\" data-categories=\"%s\" data-title=\"%s\" data-addprice=\"%s\"%s value=\"%d\" />",
                         $item['id'],
                         $item['map_coordinates'],
                         $item['categories'],
                         htmlentities($item['title']),
-                        htmlentities($item['menutitle'])
+                        htmlentities($item['menutitle']), 
+                        $checked,
+                        $item['id']
                     );
                     $html .= sprintf(
                         "<label class=\"pull-left Text FontNormal\" for=\"Chek%d\">", 

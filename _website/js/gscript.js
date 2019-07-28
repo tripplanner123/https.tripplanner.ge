@@ -465,8 +465,16 @@ var updateDataMobile = function(){
     }); 
     catIds = JSON.stringify(catIds);
 
+    var selectedItems = new Array();
+    $("#plantripform input").each(function(){
+        if($(this).attr("name")=="plantrip_direction[]"){
+            var id = $(this).val();
+            selectedItems.push(id);
+        }
+    });
+    selectedItems = JSON.stringify(selectedItems);
+
     var regionList = $("#mobile-regions").val();
-    // regionList = JSON.stringify(regionList);
 
     $.ajax({
         type: "POST",
@@ -475,6 +483,7 @@ var updateDataMobile = function(){
             type:"loadPlacesMobile", 
             input_lang:input_lang, 
             categoryList:catIds,
+            selectedItems:selectedItems,
             regionList:regionList             
         } 
     }).done(function( msg ) {

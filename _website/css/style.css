@@ -2721,14 +2721,17 @@ content: '';
 .SidebarDaysList .Item li em {
 	font-style: normal;
 	font-size:18px;
-	margin: 0 10px;
+	margin: 0;
 	line-height: 1;
 	cursor: pointer;
 	position: absolute;
-    right: -15px;
+    right: -25px;
     top: 3px; 
 	text-indent:-9999999999999px;
 	z-index: 10;
+	width: 20px;
+	height: 20px;
+	display: block;
 }
 
 .SidebarDaysList .Item li em:before {
