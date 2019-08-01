@@ -1930,6 +1930,7 @@ function g_places_with_tour_count()
 		`catalogs`.`language`='".l()."' AND 
 		FIND_IN_SET(`pages`.`id`,`catalogs`.`regions`) AND 
 		`catalogs`.`deleted`=0 AND 
+		`catalogs`.`show_tripplanner`=2 AND 
 		`catalogs`.`visibility`=1 
 	) as tour_counted,
 	`pages`.`id`,
@@ -1959,7 +1960,8 @@ function g_categories_with_tour_count()
 		`catalogs`.`language`='ge' AND 
 		FIND_IN_SET(`pages`.`id`,`catalogs`.`categories`) AND 
 		`catalogs`.`deleted`=0 AND 
-		`catalogs`.`visibility`=1 
+		`catalogs`.`visibility`=1 AND 
+		`catalogs`.`show_tripplanner`=2
 	) as tour_counted,
 	`pages`.`id`,
 	`pages`.`title`,
@@ -2097,9 +2099,9 @@ function g_ajax_catalog_list_load(){
     // Filter end
     $userid = (isset($_SESSION["cartsession"])) ? $_SESSION["cartsession"] : 0;
     $sql = "SELECT 
-    (SELECT MAX(`price`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter.") AS maxPrice,
-    (SELECT MIN(`price`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter.") AS minPrice,
-    (SELECT COUNT(`id`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter.") AS counted,
+    (SELECT MAX(`price`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter." and `show_tripplanner`=2) AS maxPrice,
+    (SELECT MIN(`price`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter." and `show_tripplanner`=2) AS minPrice,
+    (SELECT COUNT(`id`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter." and `show_tripplanner`=2) AS counted,
     `catalogs`.`id`, 
     `catalogs`.`idx`, 
     `catalogs`.`title`, 
@@ -2111,7 +2113,7 @@ function g_ajax_catalog_list_load(){
     `cart`.`id` AS cartId
     FROM `".c("table.catalogs")."` 
     LEFT JOIN `cart` ON `catalogs`.`id`=`cart`.`pid` AND `cart`.`userid`='".$userid."'
-    WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter." order by id desc"."{$limit}";
+    WHERE menuid =24 and `show_tripplanner`=2 and visibility=1 and deleted=0 and language = '" . l() . "' ".$filter." order by id desc"."{$limit}";
     // echo $sql;
     $res = db_fetch_all($sql);
     return $res;
@@ -2123,7 +2125,7 @@ function g_homepage_tours($top_tour = false, $top_offers = false){
 	$limit = " LIMIT 8";
 	$userid = (isset($_SESSION["cartsession"])) ? $_SESSION["cartsession"] : 0;
 	$sql = "SELECT 
-    (SELECT COUNT(`id`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "') AS counted,
+    (SELECT COUNT(`id`) FROM `".c("table.catalogs")."` WHERE menuid =24 and visibility=1 and deleted=0 and language = '" . l() . "' and `show_tripplanner`=2) AS counted,
     `catalogs`.`id`, 
     `catalogs`.`idx`, 
     `catalogs`.`title`, 
@@ -2135,7 +2137,7 @@ function g_homepage_tours($top_tour = false, $top_offers = false){
     `cart`.`id` AS cartId
     FROM `".c("table.catalogs")."` 
     LEFT JOIN `cart` ON `catalogs`.`id`=`cart`.`pid` AND `cart`.`userid`='".$userid."'
-    WHERE `menuid` =24 and `visibility`=1 and `deleted`=0 and `language` = '" . l() . "'{$top_tour}{$top_offers} order by `id` desc"."{$limit}"; // 
+    WHERE `menuid` =24 and `show_tripplanner`=2 and `visibility`=1 and `deleted`=0 and `language` = '" . l() . "'{$top_tour}{$top_offers} order by `id` desc"."{$limit}"; // 
     $res = db_fetch_all($sql); 
     return $res;
 }
