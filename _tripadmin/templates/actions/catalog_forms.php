@@ -466,6 +466,18 @@
                             <input type="checkbox" name="price_plus" class="inp-check"<?php echo (($route[1]=='edit')&&(!isset($price_plus) || $price_plus==0)) ? '' : ' checked' ?> />
                         </div>
 
+                        
+
+                        <div class="list2 fix" style="<?=($menuid==47) ? 'visibility:hidden; position:absolute' : ''?>">
+                            <div class="name">Visible on trip:</div>
+                            <input type="checkbox" name="show_tripplanner" class="inp-check"<?php echo (($route[1]=='edit')&&(!isset($show_tripplanner) || $show_tripplanner==0 || $show_tripplanner==1)) ? '' : ' checked' ?> />
+                        </div>
+
+                        <div class="list2 fix" style="<?=($menuid==47) ? 'visibility:hidden; position:absolute' : ''?>">
+                            <div class="name">Visible on beetrip:</div>
+                            <input type="checkbox" name="show_beetrip" class="inp-check"<?php echo (($route[1]=='edit')&&(!isset($show_beetrip) || $show_beetrip==0 || $show_beetrip==1)) ? '' : ' checked' ?> />
+                        </div>
+
 
                     </div>
                     

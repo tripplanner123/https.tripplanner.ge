@@ -1254,6 +1254,8 @@ class Admin_Manager
 					$top_tour = ((isset($_POST["top_tour"])) && ($_POST["top_tour"] == 'on')) ? 1 : 0;
 					$top_offers = ((isset($_POST["top_offers"])) && ($_POST["top_offers"] == 'on')) ? 1 : 0;
 					$price_plus = ((isset($_POST["price_plus"])) && ($_POST["price_plus"] == 'on')) ? 1 : 0;
+					$show_beetrip = ((isset($_POST["show_beetrip"])) && ($_POST["show_beetrip"] == 'on')) ? 2 : 1;
+					$show_tripplanner = ((isset($_POST["show_tripplanner"])) && ($_POST["show_tripplanner"] == 'on')) ? 2 : 1;
 
 					$places=(isset($_POST['places']) && is_array($_POST['places'])) ? implode(",", $_POST['places']) : ' ';
 					$newid=$id["maxid"]+1;
@@ -1312,7 +1314,9 @@ class Admin_Manager
 							'sight_show' => $sight_show, 				
 							'top_tour' => $top_tour, 				
 							'top_offers' => $top_offers,				
-							'price_plus' => $price_plus				
+							'price_plus' => $price_plus,				
+							'show_beetrip' => $show_beetrip, 				
+							'show_tripplanner' => $show_tripplanner				
 						));
 						// die($insert);
 
@@ -1353,6 +1357,8 @@ class Admin_Manager
 					$top_tour = ((isset($_POST["top_tour"])) && ($_POST["top_tour"] == 'on')) ? 1 : 0;
 					$top_offers = ((isset($_POST["top_offers"])) && ($_POST["top_offers"] == 'on')) ? 1 : 0;
 					$price_plus = ((isset($_POST["price_plus"])) && ($_POST["price_plus"] == 'on')) ? 1 : 0;
+					$show_beetrip = ((isset($_POST["show_beetrip"])) && ($_POST["show_beetrip"] == 'on')) ? 2 : 1;
+					$show_tripplanner = ((isset($_POST["show_tripplanner"])) && ($_POST["show_tripplanner"] == 'on')) ? 2 : 1;
 					$postdate = $_POST["postdate"] .= ' ' . $_POST['posttime'];
 					$overview = (isset($_POST['overview']) ? $_POST['overview'] : ' ');
 					$includes = (isset($_POST['includes2']) ? $_POST['includes2'] : ' ');
@@ -1418,6 +1424,8 @@ class Admin_Manager
                     	`top_offers`='{$top_offers}', 
                     	`startedplace`='{$startedplace}', 
                     	`price_plus`='{$price_plus}', 
+                    	`show_beetrip`='{$show_beetrip}', 
+                    	`show_tripplanner`='{$show_tripplanner}', 
                     	`image1`='{$_POST['image1']}', 
                     	`image2`='{$_POST['image2']}', 
                     	`image3`='{$_POST['image3']}', 
@@ -1513,7 +1521,9 @@ class Admin_Manager
 					'sight_show' => $edit_data['sight_show'], 
 					'top_tour' => $edit_data['top_tour'], 				
 					'top_offers' => $edit_data['top_offers'],			
-					'price_plus' => $edit_data['price_plus'] 			
+					'price_plus' => $edit_data['price_plus'],  			
+					'show_beetrip' => $edit_data['show_beetrip'],
+					'show_tripplanner' => $edit_data['show_tripplanner']
                 );
                 $this->content = template('actions/' . $this->route[0] . '_forms', $edit);
                 break;
