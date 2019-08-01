@@ -512,6 +512,7 @@ class Manager_Pages
             $product = $this->storage->product;
             if($product["show_tripplanner"]!=2){
                 header("Location: /");
+                exit();
             }
             $product["pageid"] = $this->storage->section['id'];
             $product["level"] = $this->storage->section['level'];
