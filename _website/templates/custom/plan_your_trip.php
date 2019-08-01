@@ -218,7 +218,7 @@ $g_places_wine_tours = g_places(106);
 
 										$(document).on("change", ".theAllDatepicker", function(){
 										  var needday = parseInt($("#needday").val());
-										  console.log(needday);
+										  // console.log(needday);
 										  let startDate = new Date($(this).val());                  
 										  let tour_dayes_times = parseInt(needday) * 86400000;
 										  let tour_finish = startDate.getTime() + tour_dayes_times;

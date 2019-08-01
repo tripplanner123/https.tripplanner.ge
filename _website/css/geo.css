@@ -1,24 +1,3 @@
-
-@media (max-width:992px) {
-	.HeaderDiv { 
-		margin-bottom: 65px; 
-	}	
-	.HeaderButtons a {
-		font-family: bpg_nino_mtavruli_normal;
-		padding:3px 13px 0px 14px !important;
-		line-height: 21px;
-		height: 44px;
-	}
-	.HeaderButtons a:nth-child(2) {
-		line-height:40px;
-	}
-
-	.MenuList li a{
-		font-family: bpg_nino_mtavruli_normal;
-	}
-
-}
-
 .geolowercase{
 	text-transform: lowercase !important;
 }
@@ -555,4 +534,24 @@ h3.PageTitle label{
     top: 75px;
     left: 50px;
     transform: rotate(30deg);
+}
+
+
+@media (max-width:992px) {
+	.HeaderDiv { 
+		margin-bottom: 65px; 
+	}	
+	.HeaderButtons a {
+		font-family: bpg_nino_mtavruli_normal;
+		padding:0 !important;
+		line-height: 35px;
+	}
+	/*.HeaderButtons a:nth-child(2) {
+		line-height:40px;
+	}*/
+
+	.MenuList li a{
+		font-family: bpg_nino_mtavruli_normal;
+	}
+
 }

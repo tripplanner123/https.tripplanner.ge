@@ -196,6 +196,9 @@ html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:1
 
 
 @media (max-width:992px){
+	.headerHeight{
+		height: 105px;
+	}
 	.slick-track{
 		width:100%;
 	}

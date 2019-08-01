@@ -1082,9 +1082,11 @@ function openCloseMenuMobile(){
     if($(".MenuHamburger").hasClass("OpenMenu")){
         $(".MenuHamburger").removeClass("OpenMenu");
         $(".MobileMenuDiv").css("left","-100%");
+        $("body").removeAttr("style");
     }else{
         $(".MenuHamburger").addClass("OpenMenu");
         $(".MobileMenuDiv").css("left","0");
+        $("body").css("overflow-y","hidden");
     }
 }
 

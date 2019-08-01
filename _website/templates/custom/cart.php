@@ -274,7 +274,7 @@
 
 		
 
-        	<div class="TotalPriceDiv pull-right">
+        	<div class="TotalPriceDiv pull-right" style="min-height: 350px;">
         		<div class="col-sm-8">
                     <div class="Title">
                         <?=l("totalprice")?>

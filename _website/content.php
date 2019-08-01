@@ -475,7 +475,7 @@ var ml_account = ml('accounts', '1240842', 'l3m8y1l7t3', 'load');
 
 
 
-<div style="float: left; width: 100%;">
+<div style="float: left; width: 100%;" class="headerHeight">
 	<div class="HeaderDiv">
 		<a href="javascript:void(0)" class="MenuHamburger" style="cursor: pointer;" onclick="openCloseMenuMobile()"></a>
 		<div class="container-fluid">

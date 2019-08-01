@@ -534,6 +534,7 @@ function updateDirections(google, directionsService, directionsDisplay)
 		$(".planner-childrenunder").attr("disabled", false);
 		$(".planner-children").attr("disabled", false);
 		$(".input-group-btn button").attr("disabled", false);
+		$("#mobile-enddate").attr("disabled", "disabled");
 
 		return false;
 	}
@@ -734,7 +735,7 @@ function updateDirections(google, directionsService, directionsDisplay)
         var totalGelPrice___ = parseFloat(price_sum_converted + (addSum*parseInt(Day)));
 
         var income_proc = parseFloat(nv_transport_object.income_proc);
-        console.log(totalGelPrice___ + " " +income_proc);
+        // console.log(totalGelPrice___ + " " +income_proc);
         totalGelPrice___ = totalGelPrice___ + (totalGelPrice___ * income_proc / 100);
 
 
@@ -761,6 +762,7 @@ function updateDirections(google, directionsService, directionsDisplay)
 		$(".planner-childrenunder").attr("disabled", false);
 		$(".planner-children").attr("disabled", false);
 		$(".input-group-btn button").attr("disabled", false);
+		$("#mobile-enddate").attr("disabled", "disabled");
 
 		return true;
 		

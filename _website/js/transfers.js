@@ -694,7 +694,6 @@ function countPriceTransportDouble(){
     }
 
 	$("#totalprice2").html( (totalThePrice___ || 0) +cur);
-
 }
 
 function changeTransport(num, mobile){
@@ -1010,6 +1009,32 @@ function countPriceTransportMobileDouble(){
 	if(totalCrow>nv_transport_object.p_transfer_max_crowed){
 		let howManyCars = Math.ceil(totalCrow / nv_transport_object.p_transfer_max_crowed);
 		transport_price_per_km = parseFloat(transport_price_per_km * howManyCars);
+	}
+	/* New Calculation END */
+
+	var samewaydiscount = nv_transport_object.samewaydiscount;
+	var firstFromPlace = parseInt($("#mobile-startingPlace").val());
+	var firstToPlace = parseInt($("#mobile-endPlace").val());
+	var secondFromPlace = parseInt($("#mobile-startingPlace2").val());
+	var secondToPlace = parseInt($("#mobile-endPlace2").val());
+	var ex1 = $("#mobile-startdate").val().split("-");
+	var ex2 = $("#double-mobile-startdate").val().split("-");
+
+	var year = ex1[0];
+	var month = (ex1[1].length<=1) ? "0"+ex1[1] : ex1[1];
+	var day = (ex1[2].length<=1) ? "0"+ex1[2] : ex1[2];
+
+	var year2 = ex2[0];
+	var month2 = (ex2[1].length<=1) ? "0"+ex2[1] : ex2[1];
+	var day2 = (ex2[2].length<=1) ? "0"+ex2[2] : ex2[2];
+
+	var firstFullDate = year + "-" + month + "-" + day;
+	var secondFullDate = year2 + "-" + month2 + "-" + day2;
+
+	//same way back discount
+	if(firstFromPlace==secondToPlace && firstToPlace==secondFromPlace && firstFullDate==secondFullDate){
+		console.log("entered 2");
+		transport_price_per_km = transport_price_per_km - ((transport_price_per_km*samewaydiscount) / 100);
 	}
 	/* New Calculation END */
 
