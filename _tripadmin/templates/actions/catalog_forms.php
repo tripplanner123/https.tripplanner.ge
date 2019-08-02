@@ -15,9 +15,9 @@
                     <div id="general">
                         <input type="hidden" name="tabstop" id="tabstop" value="edit" />
                         <input type="hidden" name="menuid" value="<?php echo $menuid ?>" />
-                        <div class="list fix">
+                        <div class="list fix" style="background-color: #039BE5">
                             <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
-                            <div class="title"><?php echo a("info");?>: <span class="star">*</span></div>
+                            <div class="title" style="color: white"><?php echo a("info");?>: <span class="star">*</span></div>
                         </div>
 
 
@@ -136,9 +136,82 @@
                         </div>
 
                         <?php if($menuid == 24) : ?>
-                        <div class="list fix">
+
+                        <div class="list fix" style="background-color: #039BE5">
                             <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
-                            <div class="title">მზა ტურის ფასის გამოთვლა: <span class="star">*</span></div>
+                            <div class="title" style="color: white">მზა ტურის ფასის გამოთვლა Beetrip: <span class="star">*</span></div>
+                        </div>
+                        
+                        <div class="list fix">
+                            <div class="name">მთლიანი ფასი სედანი</div>
+                            <input type="text" name="price_sedan2" value="<?php echo ($route[1]=='edit' && isset($price_sedan2)) ? $price_sedan2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">ტურ. მინ. რაო. BEP. სედანი</div>
+                            <input type="text" name="guest_sedan2" value="<?php echo ($route[1]=='edit' && isset($guest_sedan2)) ? $guest_sedan2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">მთლიანი ფასი მინივენი</div>
+                            <input type="text" name="price_minivan2" value="<?php echo ($route[1]=='edit' && isset($price_minivan2)) ? $price_minivan2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix" style="visibility:hidden; position:absolute">
+                            <div class="name">ტურ. მინ. რაო. BEP. მინივენი</div>
+                            <input type="text" name="guest_minivan2" value="<?php echo ($route[1]=='edit' && isset($guest_minivan2)) ? $guest_minivan2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">მთლიანი ფასი მინიბუსი</div>
+                            <input type="text" name="price_minibus2" value="<?php echo ($route[1]=='edit' && isset($price_minibus2)) ? $price_minibus2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">მთლიანი ფასი ავტობუსი</div>
+                            <input type="text" name="price_bus2" value="<?php echo ($route[1]=='edit' && isset($price_bus2)) ? $price_bus2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix" style="visibility:hidden; position:absolute">
+                            <div class="name">ტურ. მინ. რაო. BEP. ავტობუსი</div>
+                            <input type="text" name="guest_bus2" value="<?php echo ($route[1]=='edit' && isset($guest_bus2)) ? $guest_bus2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">მარჟა %</div>
+                            <input type="text" name="tour_margin2" value="<?php echo ($route[1]=='edit' && isset($tour_margin2)) ? $tour_margin2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">მოგების %</div>
+                            <input type="text" name="tour_income_margin2" value="<?php echo ($route[1]=='edit' && isset($tour_income_margin2)) ? $tour_income_margin2 : '' ?>" class="inp" />
+                        </div>
+                        
+
+                        <div class="list fix">
+                            <div class="name">კვების ღირებულება</div>
+                            <input type="text" name="cuisune_price1person2" value="<?php echo ($route[1]=='edit' && isset($cuisune_price1person2)) ? $cuisune_price1person2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">ბილეთ. სხვა ხარჯი</div>
+                            <input type="text" name="ticketsandother_price1person2" value="<?php echo ($route[1]=='edit' && isset($ticketsandother_price1person2)) ? $ticketsandother_price1person2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">სასტუმრო</div>
+                            <input type="text" name="hotelpricefortour2" value="<?php echo ($route[1]=='edit' && isset($hotelpricefortour2)) ? $hotelpricefortour2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">გიდი</div>
+                            <input type="text" name="guidepricefortour2" value="<?php echo ($route[1]=='edit' && isset($guidepricefortour2)) ? $guidepricefortour2 : '' ?>" class="inp" />
+                        </div>
+                            
+                        <!-- ///////////////////////// -->
+                        <div class="list fix" style="background-color: #039BE5">
+                            <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
+                            <div class="title" style="color: white">მზა ტურის ფასის გამოთვლა Tripplanner: <span class="star">*</span></div>
                         </div>
 
                         <div class="list fix">
@@ -214,9 +287,9 @@
 
                         
 
-                        <div class="list fix">
+                        <div class="list fix" style="background-color: #039BE5">
                             <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
-                            <div class="title"><?php echo a("general");?>: <span class="star">*</span></div>
+                            <div class="title" style="color: white"><?php echo a("general");?>: <span class="star">*</span></div>
                         </div>
 
                         <div class="list2 fix" style="<?=($menuid==47 || $menuid==42) ? 'visibility:hidden; position:absolute' : ''?>">

@@ -987,3 +987,12 @@ Stack trace:
 [27-Jul-2019 13:03:35 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 2979
 [28-Jul-2019 01:12:00 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1260
 [01-Aug-2019 08:29:53 Asia/Tbilisi] PHP Notice:  Undefined variable: id in /home4/tripplanner/public_html/_tripadmin/templates/actions/catalog_list.php on line 38
+[02-Aug-2019 12:37:29 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1264
+[02-Aug-2019 12:37:29 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1264
+[02-Aug-2019 12:37:30 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1264
+[02-Aug-2019 13:02:09 Asia/Tbilisi] PHP Notice:  Undefined index: guest_minivan2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1565
+[02-Aug-2019 13:02:09 Asia/Tbilisi] PHP Notice:  Undefined index: guest_bus2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1568
+[02-Aug-2019 13:02:09 Asia/Tbilisi] PHP Notice:  Undefined index: total_dayes2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1575
+[02-Aug-2019 13:06:26 Asia/Tbilisi] PHP Notice:  Undefined index: guest_minivan2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1565
+[02-Aug-2019 13:06:26 Asia/Tbilisi] PHP Notice:  Undefined index: guest_bus2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1568
+[02-Aug-2019 13:06:26 Asia/Tbilisi] PHP Notice:  Undefined index: total_dayes2 in /home4/tripplanner/public_html/_tripadmin/class.manager.php on line 1575

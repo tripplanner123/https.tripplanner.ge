@@ -1243,10 +1243,23 @@ class Admin_Manager
 					$tour_income_margin = (!empty($_POST["tour_income_margin"])) ? $_POST["tour_income_margin"] : ' ';
 					$cuisune_price1person = (!empty($_POST["cuisune_price1person"])) ? $_POST["cuisune_price1person"] : ' ';
 					$ticketsandother_price1person = (!empty($_POST["ticketsandother_price1person"])) ? $_POST["ticketsandother_price1person"] : ' ';
-
-					
 					$hotelpricefortour = (!empty($_POST["hotelpricefortour"])) ? $_POST["hotelpricefortour"] : ' ';
 					$guidepricefortour = (!empty($_POST["guidepricefortour"])) ? $_POST["guidepricefortour"] : ' ';
+
+					$price_sedan2 = (!empty($_POST["price_sedan2"])) ? $_POST["price_sedan2"] : ' ';
+					$guest_sedan2 = (!empty($_POST["guest_sedan2"])) ? $_POST["guest_sedan2"] : ' ';
+					$price_minivan2 = (!empty($_POST["price_minivan2"])) ? $_POST["price_minivan2"] : ' ';
+					$guest_minivan2 = (!empty($_POST["guest_minivan2"])) ? $_POST["guest_minivan2"] : ' ';
+					$price_minibus2 = (!empty($_POST["price_minibus2"])) ? $_POST["price_minibus2"] : ' ';
+					$price_bus2 = (!empty($_POST["price_bus2"])) ? $_POST["price_bus2"] : ' ';
+					$guest_bus2 = (!empty($_POST["guest_bus2"])) ? $_POST["guest_bus2"] : ' ';
+					$total_dayes2 = (!empty($_POST["total_dayes2"])) ? $_POST["total_dayes2"] : ' ';
+					$tour_margin2 = (!empty($_POST["tour_margin2"])) ? $_POST["tour_margin2"] : ' ';
+					$tour_income_margin2 = (!empty($_POST["tour_income_margin2"])) ? $_POST["tour_income_margin2"] : ' ';
+					$cuisune_price1person2 = (!empty($_POST["cuisune_price1person2"])) ? $_POST["cuisune_price1person2"] : ' ';
+					$ticketsandother_price1person2 = (!empty($_POST["ticketsandother_price1person2"])) ? $_POST["ticketsandother_price1person2"] : ' ';
+					$hotelpricefortour2 = (!empty($_POST["hotelpricefortour2"])) ? $_POST["hotelpricefortour2"] : ' ';
+					$guidepricefortour2 = (!empty($_POST["guidepricefortour2"])) ? $_POST["guidepricefortour2"] : ' ';
 					
 					$startedplace = ((isset($_POST["startedplace"])) && ($_POST["startedplace"] == 'on')) ? 1 : 0;
 					$planner_show = ((isset($_POST["planner_show"])) && ($_POST["planner_show"] == 'on')) ? 1 : 0;
@@ -1256,7 +1269,6 @@ class Admin_Manager
 					$price_plus = ((isset($_POST["price_plus"])) && ($_POST["price_plus"] == 'on')) ? 1 : 0;
 					$show_beetrip = ((isset($_POST["show_beetrip"])) && ($_POST["show_beetrip"] == 'on')) ? 2 : 1;
 					$show_tripplanner = ((isset($_POST["show_tripplanner"])) && ($_POST["show_tripplanner"] == 'on')) ? 2 : 1;
-
 					$places=(isset($_POST['places']) && is_array($_POST['places'])) ? implode(",", $_POST['places']) : ' ';
 					$newid=$id["maxid"]+1;
 					$slug = (!empty($_POST["slug"])) ? utf82lat($_POST["slug"]) : "";
@@ -1278,7 +1290,7 @@ class Admin_Manager
 							'slug' => $slug,							
 							'map_coordinates' => $map_coordinates,							
 							'overview' => $overview,							
-							'regions' => $regions,	
+							'regions' => $regions,
 							'price_sedan' => $price_sedan,
 							'guest_sedan' => $guest_sedan,
 							'price_minivan' => $price_minivan,
@@ -1291,8 +1303,22 @@ class Admin_Manager
 							'cuisune_price1person' => $cuisune_price1person,			
 							'ticketsandother_price1person' => $ticketsandother_price1person,			
 							'hotelpricefortour' => $hotelpricefortour,			
-							'guidepricefortour' => $guidepricefortour,			
-							'total_dayes' => $total_dayes,							
+							'guidepricefortour' => $guidepricefortour,
+							'total_dayes' => $total_dayes,	
+							'price_sedan2' => $price_sedan2,
+							'guest_sedan2' => $guest_sedan2,
+							'price_minivan2' => $price_minivan2,
+							'guest_minivan2' => $guest_minivan2,
+							'price_bus2' => $price_bus2,
+							'price_minibus2' => $price_minibus2,
+							'guest_bus2' => $guest_bus2,
+							'tour_margin2' => $tour_margin2,			
+							'tour_income_margin2' => $tour_income_margin2,			
+							'cuisune_price1person2' => $cuisune_price1person2,			
+							'ticketsandother_price1person2' => $ticketsandother_price1person2,
+							'hotelpricefortour2' => $hotelpricefortour2,
+							'guidepricefortour2' => $guidepricefortour2,							
+							'total_dayes2' => $total_dayes2,							
 							'categories' => $categories,							
 							'description' => $description,							
 							'includes' => $includes,							
@@ -1378,8 +1404,25 @@ class Admin_Manager
 
 					$hotelpricefortour = (!empty($_POST["hotelpricefortour"])) ? $_POST["hotelpricefortour"] : ' ';
 					$guidepricefortour = (!empty($_POST["guidepricefortour"])) ? $_POST["guidepricefortour"] : ' ';
-
 					$total_dayes = (!empty($_POST["total_dayes"])) ? $_POST["total_dayes"] : ' ';
+
+					$price_sedan2 = (!empty($_POST["price_sedan2"])) ? $_POST["price_sedan2"] : ' '; 
+					$guest_sedan2 = (!empty($_POST["guest_sedan2"])) ? $_POST["guest_sedan2"] : ' ';
+					$price_minivan2 = (!empty($_POST["price_minivan2"])) ? $_POST["price_minivan2"] : ' ';
+					$guest_minivan2 = (!empty($_POST["guest_minivan2"])) ? $_POST["guest_minivan2"] : ' ';
+					$price_minibus2 = (!empty($_POST["price_minibus2"])) ? $_POST["price_minibus2"] : ' ';
+					$price_bus2 = (!empty($_POST["price_bus2"])) ? $_POST["price_bus2"] : ' ';
+					$guest_bus2 = (!empty($_POST["guest_bus2"])) ? $_POST["guest_bus2"] : ' ';
+					$tour_margin2 = (!empty($_POST["tour_margin2"])) ? $_POST["tour_margin2"] : ' ';
+					$tour_income_margin2 = (!empty($_POST["tour_income_margin2"])) ? $_POST["tour_income_margin2"] : ' ';
+					$cuisune_price1person2 = (!empty($_POST["cuisune_price1person2"])) ? $_POST["cuisune_price1person2"] : ' ';
+					$ticketsandother_price1person2 = (!empty($_POST["ticketsandother_price1person2"])) ? $_POST["ticketsandother_price1person2"] : ' ';
+
+					$hotelpricefortour2 = (!empty($_POST["hotelpricefortour2"])) ? $_POST["hotelpricefortour2"] : ' ';
+					$guidepricefortour2 = (!empty($_POST["guidepricefortour2"])) ? $_POST["guidepricefortour2"] : ' ';
+					$total_dayes2 = (!empty($_POST["total_dayes2"])) ? $_POST["total_dayes2"] : ' ';
+					
+
 					$slug = (!empty($_POST["slug"])) ? utf82lat($_POST["slug"]) : "";
 
 					$data = array(
@@ -1417,6 +1460,19 @@ class Admin_Manager
                     	`ticketsandother_price1person`='{$ticketsandother_price1person}', 
                     	`hotelpricefortour`='{$hotelpricefortour}', 
                     	`guidepricefortour`='{$guidepricefortour}', 
+                    	`price_sedan2`='{$price_sedan2}', 
+                    	`guest_sedan2`='{$guest_sedan2}', 
+                    	`price_minivan2`='{$price_minivan2}', 
+                    	`guest_minivan2`='{$guest_minivan2}', 
+                    	`price_bus2`='{$price_bus2}', 
+                    	`price_minibus2`='{$price_minibus2}', 
+                    	`guest_bus2`='{$guest_bus2}', 
+                    	`tour_margin2`='{$tour_margin2}', 
+                    	`tour_income_margin2`='{$tour_income_margin2}', 
+                    	`cuisune_price1person2`='{$cuisune_price1person2}', 
+                    	`ticketsandother_price1person2`='{$ticketsandother_price1person2}', 
+                    	`hotelpricefortour2`='{$hotelpricefortour2}', 
+                    	`guidepricefortour2`='{$guidepricefortour2}', 
                     	`places`='{$places}', 
                     	`sight_show`='{$sight_show}', 
                     	`planner_show`='{$planner_show}', 
@@ -1439,7 +1495,8 @@ class Admin_Manager
                     	`price`='".(!empty($_POST['price']) ? (float)$_POST['price'] : ' ')."', 
                     	`map_coordinates`='".(!empty($_POST['map_coordinates']) ? $_POST['map_coordinates'] : ' ')."', 
                     	`slug`='".str_replace(array('"',"'", "'", "'"), "", $slug)."', 
-                    	`total_dayes`='{$total_dayes}' 
+                    	`total_dayes`='{$total_dayes}', 
+                    	`total_dayes2`='{$total_dayes2}'
                     	WHERE `id`={$edit["id"]}
                     ");
 
@@ -1487,6 +1544,7 @@ class Admin_Manager
 					'reiting' => $edit_data["reiting"],
 					'regions' => $edit_data["regions"],
 					'places' => $edit_data["places"],
+					
 					'price_sedan' => $edit_data["price_sedan"],
 					'guest_sedan' => $edit_data["guest_sedan"],
 					'price_minivan' => $edit_data["price_minivan"],
@@ -1501,6 +1559,20 @@ class Admin_Manager
 					'hotelpricefortour' => $edit_data["hotelpricefortour"],	
 					'guidepricefortour' => $edit_data["guidepricefortour"],	
 					'total_dayes' => $edit_data["total_dayes"],
+					'price_sedan2' => $edit_data["price_sedan2"],
+					'guest_sedan2' => $edit_data["guest_sedan2"],
+					'price_minivan2' => $edit_data["price_minivan2"],
+					'guest_minivan2' => $edit_data["guest_minivan2"],
+					'price_minibus2' => $edit_data["price_minibus2"],
+					'price_bus2' => $edit_data["price_bus2"],
+					'guest_bus2' => $edit_data["guest_bus2"],
+					'tour_margin2' => $edit_data["tour_margin2"],	
+					'tour_income_margin2' => $edit_data["tour_income_margin2"],	
+					'cuisune_price1person2' => $edit_data["cuisune_price1person2"],	
+					'ticketsandother_price1person2' => $edit_data["ticketsandother_price1person2"],	
+					'hotelpricefortour2' => $edit_data["hotelpricefortour2"],	
+					'guidepricefortour2' => $edit_data["guidepricefortour2"],	
+					'total_dayes2' => $edit_data["total_dayes2"],
 					'categories' => $edit_data["categories"],
 					'meta_desc' => $edit_data["meta_desc"],
 					'image1' => $edit_data['image1'],

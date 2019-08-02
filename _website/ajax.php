@@ -574,6 +574,7 @@
                         `catalogs`.`menuid`=24 AND 
                         `catalogs`.`language`='".$_POST["input_lang"]."' AND 
                         `catalogs`.`visibility`=1 AND 
+                        `catalogs`.`show_tripplanner`=2 AND 
                         `catalogs`.`deleted`=0
                     ) AS sights_counted,
                     (
@@ -585,6 +586,7 @@
                         FIND_IN_SET(`pages`.`id`, `catalogs`.`regions`) AND 
                         FIND_IN_SET('106', `catalogs`.`categories`) AND 
                         `catalogs`.`menuid`=24 AND 
+                        `catalogs`.`show_tripplanner`=2 AND 
                         `catalogs`.`language`='".$_POST["input_lang"]."' AND 
                         `catalogs`.`visibility`=1 AND 
                         `catalogs`.`deleted`=0
@@ -598,6 +600,7 @@
                         FIND_IN_SET(`pages`.`id`, `catalogs`.`regions`) AND 
                         FIND_IN_SET('107', `catalogs`.`categories`) AND 
                         `catalogs`.`menuid`=24 AND 
+                        `catalogs`.`show_tripplanner`=2 AND 
                         `catalogs`.`language`='".$_POST["input_lang"]."' AND 
                         `catalogs`.`visibility`=1 AND 
                         `catalogs`.`deleted`=0
@@ -611,6 +614,7 @@
                         FIND_IN_SET(`pages`.`id`, `catalogs`.`regions`) AND 
                         FIND_IN_SET('108', `catalogs`.`categories`) AND 
                         `catalogs`.`menuid`=24 AND 
+                        `catalogs`.`show_tripplanner`=2 AND 
                         `catalogs`.`language`='".$_POST["input_lang"]."' AND 
                         `catalogs`.`visibility`=1 AND 
                         `catalogs`.`deleted`=0
