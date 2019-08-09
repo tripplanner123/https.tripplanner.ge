@@ -8,24 +8,12 @@ Header append Cache-Control "public"
 
 # force non-www domain
 RewriteCond %{HTTP_HOST} ^www\.tripplanner\.ge$ [NC]
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule (.*) https://tripplanner.ge/$1 [R=301,L]
 
 IndexIgnore */*
 RewriteEngine On
 # images|styles|scripts|uploads|_manager|_website|_cache|
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^(images|styles|scripts|uploads|flash|_manager|_website|img|_javascript|.*\.(pem|doc|docx|xls|xlsx|css|js|jpg|JPG|mp3|jpeg|JPEG|gif|GIF|swf|xml|png|PNG|pdf|ico|zip|rar|html|php|txt|sql)) - [L]
+RewriteRule ^(images|styles|scripts|uploads|flash|_manager|_website|img|_javascript|.*\.(pem|doc|docx|xls|xlsx|css|js|jpg|JPG|mp3|jpeg|JPEG|gif|GIF|swf|xml|png|PNG|pdf|ico|zip|rar|html|php|webp|txt|sql)) - [L]
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule . index.php [QSA,L]

@@ -8,6 +8,6 @@ SecFilterScanPOST Off
   Deny from all
 </Files>
 
-<Files ~ "^.*\.png|.*\.jpg|.*\.gif|.*\.css|.*\.js|.*\.ttf|.*\.eot|.*\.svg|.*\.woff|.*\.otf|.*\.php">
+<Files ~ "^.*\.png|.*\.jpg|.*\.gif|.*\.css|.*\.js|.*\.ttf|.*\.eot|.*\.svg|.*\.woff|.*\.otf|.*\.php|.*\.webp">
   Allow from all
 </Files>

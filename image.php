@@ -52,9 +52,9 @@ class Image
 			if(!file_exists($resizePath)){		
 				$manager = new ImageManager(array('driver' => 'gd'));	//imagick	
 				if($grey){
-					$manager->make($filename[1])->fit($w, $h)->greyscale()->encode('jpeg', 65)->save($resizePath)->colorize(0, 30, 0);
+					$manager->make($filename[1])->fit($w, $h)->greyscale()->encode('webp', 55)->save($resizePath)->colorize(0, 30, 0);
 				}else{
-					$manager->make($filename[1])->fit($w, $h)->encode('jpeg', 65)->save($resizePath)->colorize(0, 30, 0);
+					$manager->make($filename[1])->fit($w, $h)->encode('webp', 55)->save($resizePath)->colorize(0, 30, 0);
 				}
 			}
 

@@ -2,6 +2,6 @@
   Deny from all
 </Files>
 
-<Files ~ "^.*\.png|.*\.jpg|.*\.gif|.*\.pdf|.*\.PDF|.*\.JPG|.*\.PNG|.*\.GIF|.*\.jpeg|.*\.JPEG">
+<Files ~ "^.*\.png|.*\.jpg|.*\.gif|.*\.pdf|.*\.PDF|.*\.JPG|.*\.PNG|.*\.GIF|.*\.jpeg|.*\.JPEG|.*\.webp">
   Allow from all
 </Files>

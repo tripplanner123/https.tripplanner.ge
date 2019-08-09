@@ -1,0 +1,6 @@
+[09-Aug-2019 12:55:21 Asia/Tbilisi] PHP Fatal error:  Uncaught Exception: file ../../../files/1.webp is missing or invalid in /home4/tripplanner/public_html/_javascript2/tinymce/filemanager/include/php_image_magician.php:325
+Stack trace:
+#0 /home4/tripplanner/public_html/_javascript2/tinymce/filemanager/include/utils.php(57): imageLib->resizeImage(122, 91, 'crop')
+#1 /home4/tripplanner/public_html/_javascript2/tinymce/filemanager/upload.php(97): create_img('../../../files/...', '../../../.tmb/1...', 122, 91)
+#2 {main}
+  thrown in /home4/tripplanner/public_html/_javascript2/tinymce/filemanager/include/php_image_magician.php on line 325
