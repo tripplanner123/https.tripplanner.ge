@@ -1227,6 +1227,7 @@ class Admin_Manager
 					$categories = (!empty($_POST["categories"]) && is_array($_POST["categories"])) ? implode(",",$_POST["categories"]) : " ";
 					$description = (!empty($_POST["description"])) ? $_POST["description"] : ' ';
 					$includes = (!empty($_POST["includes2"])) ? $_POST["includes2"] : ' ';
+					$includes3 = (!empty($_POST["includes3"])) ? $_POST["includes3"] : ' ';
 					$meta_keys = (!empty($_POST["meta_keys"])) ? $_POST["meta_keys"] : ' ';
 					$meta_desc = (!empty($_POST["meta_desc"])) ? $_POST["meta_desc"] : ' ';
 					$overview = (!empty($_POST["overview"])) ? $_POST["overview"] : ' ';
@@ -1322,6 +1323,7 @@ class Admin_Manager
 							'categories' => $categories,							
 							'description' => $description,							
 							'includes' => $includes,							
+							'includes3' => $includes3,							
 							'image1' => $_POST['image1'],
 							'image2' => $_POST['image2'],
 							'image3' => $_POST['image3'],
@@ -1388,6 +1390,7 @@ class Admin_Manager
 					$postdate = $_POST["postdate"] .= ' ' . $_POST['posttime'];
 					$overview = (isset($_POST['overview']) ? $_POST['overview'] : ' ');
 					$includes = (isset($_POST['includes2']) ? $_POST['includes2'] : ' ');
+					$includes3 = (isset($_POST['includes3']) ? $_POST['includes3'] : ' ');
 
 
 					$price_sedan = (!empty($_POST["price_sedan"])) ? $_POST["price_sedan"] : ' '; 
@@ -1507,6 +1510,7 @@ class Admin_Manager
 						'reiting' => (!empty($_POST['reiting']) ? $_POST['reiting'] : 1),
 						'overview' => $overview,
 						'includes' => $includes,
+						'includes3' => $includes3,
 						'regions' => $regions,		
 						'categories' => $categories
                     );
@@ -1534,6 +1538,7 @@ class Admin_Manager
 					'pagetitle' => $edit_data['title'],
 					'overview' => $edit_data['overview'],
 					'includes' => $edit_data['includes'],
+					'includes3' => $edit_data['includes3'],
 					'price' => $edit_data['price'],		
 					'map_coordinates' => $edit_data['map_coordinates'],
 					'description' => $edit_data['description'],

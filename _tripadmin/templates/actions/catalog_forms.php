@@ -314,6 +314,13 @@
                             </div>
                         </div>
 
+                        <div class="list2 fix" style="margin-top: 20px; <?=($menuid==42) ? 'visibility:hidden; position:absolute' : ''?>">
+                            <div class="name" style="line-height:16px;">Includes Beetrip: <span class="star">*</span></div>
+                            <div class="left" style="width:900px;">
+                                <textarea name="includes3" class="editor" style="height:200px; margin-top:2px; margin-bottom:2px;"><?php echo ($route[1]=='edit') ? $includes3 : '' ?></textarea>
+                            </div>
+                        </div>
+
                         
 
                         <div class="list2 fix" style="<?=($menuid==47 || $menuid==42) ? 'visibility:hidden; position:absolute' : ''?>">

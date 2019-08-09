@@ -1016,3 +1016,5 @@ Stack trace:
 [03-Aug-2019 11:45:38 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1264
 [03-Aug-2019 11:45:39 Asia/Tbilisi] PHP Notice:  Undefined index: CSRF_token in /home4/tripplanner/public_html/_website/ajax.php on line 1264
 [05-Aug-2019 00:05:41 Asia/Tbilisi] PHP Notice:  Undefined index: php_captcha in /home4/tripplanner/public_html/_website/templates/contact.php on line 21
+[09-Aug-2019 11:39:04 Asia/Tbilisi] PHP Notice:  Undefined variable: includes2 in /home4/tripplanner/public_html/_tripadmin/templates/actions/catalog_forms.php on line 320
+[09-Aug-2019 11:43:38 Asia/Tbilisi] PHP Notice:  Undefined variable: includes3 in /home4/tripplanner/public_html/_tripadmin/templates/actions/catalog_forms.php on line 320
