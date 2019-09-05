@@ -1229,9 +1229,3 @@ $(document).on("change", ".terms-conditions-buy", function(){
         $('.CartBuyDiv').slideUp();
     }
 });
-
-// $(document).on("mouseenter", ".g-partner-logos", function(){
-//     var hover = $(this).attr("data-hover");
-//     console.log(hover);
-//     $(this).attr("style", "background-image:url('"+hover+"') !important");
-// });

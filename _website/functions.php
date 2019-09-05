@@ -849,11 +849,13 @@ function news($limit = 4)
 		$count++;
         $link = href($item['id']);
         
+        // " 
+
         $out .=  '
         	<div class="col-sm-3">
 				<div class="Item">
 					<div class="TopInfo">
-						<a href="'.$link.'"><div class="Background" style="background:url(\'https://tripplanner.ge/image.php?f='.$item['image1'].'&w=350&h=280\');"></div> 
+						<a href="'.$link.'"><div class="Background g-load-after" data-imgurl="https://tripplanner.ge/image.php?f='.$item['image1'].'&w=350&h=280"></div> 
 						<div class="Date">'.g_convert_date($item["postdate"]).'</div></a>
 					</div>
 					<div class="BottomInfo" style="min-height:80px;">

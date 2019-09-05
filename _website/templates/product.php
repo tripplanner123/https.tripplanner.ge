@@ -425,7 +425,7 @@ if($menuid==47 || $menuid==36){ // if it is Sight
             <div class="col-sm-3">
               <div class="Item">
                 <div class="TopInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
-                  <div class="Background" style="background:url('<?=$item['image1']?>');"></div>
+                  <div class="Background g-load-after" data-imgurl="<?=$item['image1']?>"></div>
                 </div>
                 <div class="BottomInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
                   <div class="Title"><?=g_cut($item['title'], 40)?></div>
@@ -663,3 +663,22 @@ $(document).on("change", ".tour-child-number-under", function(){
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeSTjMJTVIuJaIiFgxLQgvCRl8HJqo0qo&amp;callback=initMap"></script>
 <?php } ?>
+
+<script>
+(function(){
+  if(typeof document.getElementsByClassName("g-load-after")[0] !== "undefined"){
+        var loadafter = document.getElementsByClassName("g-load-after");
+        
+        setTimeout(function(){
+          for(var x = 0; x < loadafter.length; x++){
+              if(typeof document.getElementsByClassName("g-load-after")[x] !== "undefined"){
+            var img = document.getElementsByClassName("g-load-after")[x].getAttribute("data-imgurl");
+            document.getElementsByClassName("g-load-after")[x].style.background = "url('"+img+"')";
+            document.getElementsByClassName("g-load-after")[x].classList.add("g-all-done");
+        }
+
+            };
+        },13000);
+    };
+})();
+</script>

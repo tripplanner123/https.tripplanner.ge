@@ -134,7 +134,7 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 				<div class="col-sm-3">
 					<div class="Item">
 						<div class="TopInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
-							<div class="Background" style="background:url('https://tripplanner.ge/image.php?f=<?=$item['image1']?>&w=350&h=280');"></div>
+							<div class="Background g-load-after" data-imgurl="https://tripplanner.ge/image.php?f=<?=$item['image1']?>&w=350&h=280"></div>
 							<!-- <div class="UserCount"><span>7</span></div> -->
 						</div>
 						<div class="BottomInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
@@ -162,13 +162,6 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 
 
 
-
-
-
-
-
-
-
 <div class="HomeFullInfoDiv">
 	<div class="container-fluid padding_0">
 		
@@ -187,14 +180,6 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 </div>
 
 
-
-
-
-
-
-
-
-
 <div class="ToursListDiv">
 	<div class="container">
 		<h3 class="PageTitle">
@@ -209,7 +194,7 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 				<div class="col-sm-3">
 					<div class="Item">
 						<div class="TopInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
-							<div class="Background" style="background:url('https://tripplanner.ge/image.php?f=<?=$item['image1']?>&w=350&h=280');"></div>
+							<div class="Background g-load-after" data-imgurl="https://tripplanner.ge/image.php?f=<?=$item['image1']?>&w=350&h=280"></div>
 							<!-- <div class="UserCount"><span>7</span></div> -->
 						</div>
 						<div class="BottomInfo" onclick="location.href='<?=str_replace(array('"',"'"," "),"",$link)?>'">
@@ -275,7 +260,7 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 					$link = href(141, array(), l(), $sight['id']);?>
 				<div class="col-sm-6">
 					<a href="<?=$link?>" class="Item">
-						<div class="Background" style="background:url('https://tripplanner.ge/image.php?f=<?=$sight['image1']?>&w=600&h=400');"></div>
+						<div class="Background g-load-after" data-imgurl="https://tripplanner.ge/image.php?f=<?=$sight['image1']?>&w=600&h=400"></div>
 						<div class="Title"><?=$sight['title']?></div>
 					</a>
 				</div>
@@ -328,3 +313,22 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 		</div>	
 	</div>
 </div>
+
+<script>
+(function(){
+	if(typeof document.getElementsByClassName("g-load-after")[0] !== "undefined"){
+        var loadafter = document.getElementsByClassName("g-load-after");
+        
+        setTimeout(function(){
+        	for(var x = 0; x < loadafter.length; x++){
+            	if(typeof document.getElementsByClassName("g-load-after")[x] !== "undefined"){
+			    	var img = document.getElementsByClassName("g-load-after")[x].getAttribute("data-imgurl");
+			    	document.getElementsByClassName("g-load-after")[x].style.background = "url('"+img+"')";
+			    	document.getElementsByClassName("g-load-after")[x].classList.add("g-all-done");
+				}
+
+            };
+        },13000);
+    };
+})();
+</script>
