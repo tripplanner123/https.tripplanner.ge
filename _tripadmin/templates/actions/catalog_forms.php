@@ -136,7 +136,7 @@
                         </div>
 
                         <?php if($menuid == 24) : ?>
-
+                        <div style="position:absolute; opacity: 0; z-index: -1;">
                         <div class="list fix" style="background-color: #039BE5">
                             <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
                             <div class="title" style="color: white">მზა ტურის ფასის გამოთვლა Beetrip: <span class="star">*</span></div>
@@ -145,6 +145,11 @@
                         <div class="list fix">
                             <div class="name">მთლიანი ფასი სედანი</div>
                             <input type="text" name="price_sedan2" value="<?php echo ($route[1]=='edit' && isset($price_sedan2)) ? $price_sedan2 : '' ?>" class="inp" />
+                        </div>
+
+                        <div class="list fix">
+                            <div class="name">სპეციალური შემოთავაზება %</div>
+                            <input type="text" name="special_offer2" value="<?php echo ($route[1]=='edit' && isset($special_offer2)) ? $special_offer2 : '' ?>" class="inp" />
                         </div>
 
                         <div class="list fix">
@@ -207,7 +212,7 @@
                             <div class="name">გიდი</div>
                             <input type="text" name="guidepricefortour2" value="<?php echo ($route[1]=='edit' && isset($guidepricefortour2)) ? $guidepricefortour2 : '' ?>" class="inp" />
                         </div>
-                            
+                        </div>
                         <!-- ///////////////////////// -->
                         <div class="list fix" style="background-color: #039BE5">
                             <div class="icon"><a href="#"><img src="_tripadmin/img/minus.png" width="16" height="16" alt="" /></a></div>
@@ -314,10 +319,17 @@
                             </div>
                         </div>
 
-                        <div class="list2 fix" style="margin-top: 20px; <?=($menuid==42) ? 'visibility:hidden; position:absolute' : ''?>">
+                        <div class="list2 fix" style="visibility:hidden; position:absolute">
                             <div class="name" style="line-height:16px;">Includes Beetrip: <span class="star">*</span></div>
                             <div class="left" style="width:900px;">
                                 <textarea name="includes3" class="editor" style="height:200px; margin-top:2px; margin-bottom:2px;"><?php echo ($route[1]=='edit') ? $includes3 : '' ?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="list2 fix" style="visibility:hidden; position:absolute">
+                            <div class="name" style="line-height:16px;">G. Description beetrip: <span class="star">*</span></div>
+                            <div class="left" style="width:900px;">
+                                <textarea name="description3" class="editor" style="height:200px; margin-top:2px; margin-bottom:2px;"><?php echo ($route[1]=='edit') ? $description3 : '' ?></textarea>
                             </div>
                         </div>
 
@@ -553,7 +565,7 @@
                             <input type="checkbox" name="show_tripplanner" class="inp-check"<?php echo (($route[1]=='edit')&&(!isset($show_tripplanner) || $show_tripplanner==0 || $show_tripplanner==1)) ? '' : ' checked' ?> />
                         </div>
 
-                        <div class="list2 fix" style="<?=($menuid==47) ? 'visibility:hidden; position:absolute' : ''?>">
+                        <div class="list2 fix" style="visibility:hidden; position:absolute">
                             <div class="name">Visible on beetrip:</div>
                             <input type="checkbox" name="show_beetrip" class="inp-check"<?php echo (($route[1]=='edit')&&(!isset($show_beetrip) || $show_beetrip==0 || $show_beetrip==1)) ? '' : ' checked' ?> />
                         </div>

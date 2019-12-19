@@ -1226,6 +1226,7 @@ class Admin_Manager
 					$regions = (!empty($_POST["regions"]) && is_array($_POST["regions"])) ? implode(",",$_POST["regions"]) : " ";
 					$categories = (!empty($_POST["categories"]) && is_array($_POST["categories"])) ? implode(",",$_POST["categories"]) : " ";
 					$description = (!empty($_POST["description"])) ? $_POST["description"] : ' ';
+					$description3 = (!empty($_POST["description3"])) ? $_POST["description3"] : ' ';
 					$includes = (!empty($_POST["includes2"])) ? $_POST["includes2"] : ' ';
 					$includes3 = (!empty($_POST["includes3"])) ? $_POST["includes3"] : ' ';
 					$meta_keys = (!empty($_POST["meta_keys"])) ? $_POST["meta_keys"] : ' ';
@@ -1248,6 +1249,7 @@ class Admin_Manager
 					$guidepricefortour = (!empty($_POST["guidepricefortour"])) ? $_POST["guidepricefortour"] : ' ';
 
 					$price_sedan2 = (!empty($_POST["price_sedan2"])) ? $_POST["price_sedan2"] : ' ';
+					$special_offer2 = (!empty($_POST["special_offer2"])) ? $_POST["special_offer2"] : ' ';
 					$guest_sedan2 = (!empty($_POST["guest_sedan2"])) ? $_POST["guest_sedan2"] : ' ';
 					$price_minivan2 = (!empty($_POST["price_minivan2"])) ? $_POST["price_minivan2"] : ' ';
 					$guest_minivan2 = (!empty($_POST["guest_minivan2"])) ? $_POST["guest_minivan2"] : ' ';
@@ -1307,6 +1309,7 @@ class Admin_Manager
 							'guidepricefortour' => $guidepricefortour,
 							'total_dayes' => $total_dayes,	
 							'price_sedan2' => $price_sedan2,
+							'special_offer2' => $special_offer2,
 							'guest_sedan2' => $guest_sedan2,
 							'price_minivan2' => $price_minivan2,
 							'guest_minivan2' => $guest_minivan2,
@@ -1322,6 +1325,7 @@ class Admin_Manager
 							'total_dayes2' => $total_dayes2,							
 							'categories' => $categories,							
 							'description' => $description,							
+							'description3' => $description3,							
 							'includes' => $includes,							
 							'includes3' => $includes3,							
 							'image1' => $_POST['image1'],
@@ -1410,6 +1414,7 @@ class Admin_Manager
 					$total_dayes = (!empty($_POST["total_dayes"])) ? $_POST["total_dayes"] : ' ';
 
 					$price_sedan2 = (!empty($_POST["price_sedan2"])) ? $_POST["price_sedan2"] : ' '; 
+					$special_offer2 = (!empty($_POST["special_offer2"])) ? $_POST["special_offer2"] : ' '; 
 					$guest_sedan2 = (!empty($_POST["guest_sedan2"])) ? $_POST["guest_sedan2"] : ' ';
 					$price_minivan2 = (!empty($_POST["price_minivan2"])) ? $_POST["price_minivan2"] : ' ';
 					$guest_minivan2 = (!empty($_POST["guest_minivan2"])) ? $_POST["guest_minivan2"] : ' ';
@@ -1432,6 +1437,7 @@ class Admin_Manager
                         'language' => l(), 
 						'title' => $_POST['title'],
 						'description' => (!empty($_POST['description']) ? $_POST['description'] : ' '),	
+						'description3' => (!empty($_POST['description3']) ? $_POST['description3'] : ' '),	
 						'meta_keys' => (!empty($_POST['meta_keys']) ? $_POST['meta_keys'] : ' '),		
 						'meta_desc' => (!empty($_POST['meta_desc']) ? $_POST['meta_desc'] : ' '),		
                     );
@@ -1464,6 +1470,7 @@ class Admin_Manager
                     	`hotelpricefortour`='{$hotelpricefortour}', 
                     	`guidepricefortour`='{$guidepricefortour}', 
                     	`price_sedan2`='{$price_sedan2}', 
+                    	`special_offer2`='{$special_offer2}', 
                     	`guest_sedan2`='{$guest_sedan2}', 
                     	`price_minivan2`='{$price_minivan2}', 
                     	`guest_minivan2`='{$guest_minivan2}', 
@@ -1542,6 +1549,7 @@ class Admin_Manager
 					'price' => $edit_data['price'],		
 					'map_coordinates' => $edit_data['map_coordinates'],
 					'description' => $edit_data['description'],
+					'description3' => $edit_data['description3'],
 					'visibility' => $edit_data["visibility"],
 					'slug' => $edit_data["slug"],
 					'regions_list' => $regions_list,
@@ -1565,6 +1573,7 @@ class Admin_Manager
 					'guidepricefortour' => $edit_data["guidepricefortour"],	
 					'total_dayes' => $edit_data["total_dayes"],
 					'price_sedan2' => $edit_data["price_sedan2"],
+					'special_offer2' => $edit_data["special_offer2"],
 					'guest_sedan2' => $edit_data["guest_sedan2"],
 					'price_minivan2' => $edit_data["price_minivan2"],
 					'guest_minivan2' => $edit_data["guest_minivan2"],
@@ -1755,9 +1764,9 @@ class Admin_Manager
             	// ".$beetrip."
             	$search = (isset($_GET["search"]) && is_string($_GET["search"])) ? ' AND `email` LIKE "%'.$_GET["search"].'%" ' : ''; 
                	
-                $sql = db_fetch_all("SELECT * FROM `{$table}` WHERE `deleted` = 0".$search." ORDER BY `username` asc LIMIT " . get("start", 0) . ", " . a_s("users.per.page") . ";");
+                $sql = db_fetch_all("SELECT * FROM `{$table}` WHERE `deleted` = 0".$search." ORDER BY `id` desc LIMIT " . get("start", 0) . ", " . a_s("users.per.page") . ";");
                
-                $cnt = db_fetch("SELECT COUNT(*) AS cnt FROM `{$table}` WHERE `class` = 1 AND `deleted` = 0;");
+                $cnt = db_fetch("SELECT COUNT(*) AS cnt FROM `{$table}` WHERE `deleted` = 0;");
                 $tpl["users"] = $sql;
 				$tpl["count"] = $cnt["cnt"];
 				$tpl["route"] = $this->route;

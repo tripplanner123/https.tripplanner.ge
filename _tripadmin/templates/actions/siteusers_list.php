@@ -19,7 +19,6 @@
 						<div class="full" style="width:320px;"><?php echo a("email");?></div>
 						<div class="action fix"><?php echo a("actions");?></div>
 						<div class="right" style="width:70px;">ID</div>
-						<div class="right" style="width:160px;">Website</div>
 					</div>
 <?php
 	$class = 'list';
@@ -57,7 +56,6 @@
 							<a href="javascript:del(<?php echo $user['id'];?>, '<?php echo $user['email'];?>');"><img src="_tripadmin/img/buttons/icon_delete.png" class="star" title="<?php echo a('ql.delete');?>" /></a>
 						</div>
 						<div class="right" style="width:70px;"><?php echo $user["id"];?></div>
-						<div class="right" style="width:160px;"><?php echo $user["website"];?></div>
 					</div>
 <?php endforeach; ?>
 				</div>

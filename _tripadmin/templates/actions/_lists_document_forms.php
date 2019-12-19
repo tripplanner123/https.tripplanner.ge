@@ -84,8 +84,6 @@
                             <?php 
                             if(isset($edit["menuid"]) && $edit["menuid"]==34){
                                 echo "Price";
-                            }else if(isset($edit["menuid"]) && $edit["menuid"]==40){
-                                echo 'Beetrip კმ. ფასი 0-49';
                             }else{
                                 echo a("menutitle");
                             }
@@ -95,6 +93,7 @@
 
                     <!-- beetrip prices start-->
                     <?php if(isset($edit["menuid"]) && $edit["menuid"]==40): ?>
+                    <div style="visibility: hidden; position: absolute;">
                     <div class="list2 fix">
                         <div class="name">Beetrip კმ. ფასი 50-99: <span class="star">*</span></div>
                         <input type="text" id="menutitle2" name="menutitle2" value="<?php echo ($route[1]=='edit' && isset($edit["menutitle2"])) ? $edit["menutitle2"] : '' ?>" class="inp"/>
@@ -151,7 +150,7 @@
                         <input type="text" name="samewaydiscount2" value="<?php echo ($route[1]=='edit') ? $edit["samewaydiscount2"] : '' ?>" class="inp"/>
                     </div> 
                     <!-- save way back discount End -->
-
+                    </div>
                     <?php endif; ?>
                     <!-- beetrip prices end-->
 

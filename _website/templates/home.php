@@ -328,7 +328,7 @@ animateValue("locCount3", 0, <?=(isset($g_homepage_counts["regions"])) ? $g_home
 				}
 
             };
-        },13000);
+        },8000);
     };
 })();
 </script>
