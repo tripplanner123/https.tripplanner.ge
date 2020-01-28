@@ -33,7 +33,7 @@ if(isset($_SESSION["currency"])){
         <div class="modal-content">
             <div class="modal-body">
                 <div class="CloseButton" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></div>
-                <div class="Title" style="font-size: 21px; color: #27774d; font-weight: bold; margin-bottom: 10px;"><?=l("pickup")?></div>
+                <div class="Title" style="font-size: 21px; color: #27774d; font-weight: bold; margin-bottom: 10px;"><?=l("pickupmodaltitle")?></div>
                 <div class="Text">
                     <form action="?" method="post" id="pickupplaceform">
                         <div class="resultPickupsave"></div>
